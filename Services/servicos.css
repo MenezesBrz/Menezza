@@ -143,7 +143,7 @@ html, body {
 
 #pre-main {
   min-height: 70vh;
-  background-image: url('Imagens/services\ \(7\).jpg');
+  background-image: url('/Imagens/services\ \(7\).jpg');
   background-size: cover;
   background-repeat: no-repeat; 
   background-position: center;  

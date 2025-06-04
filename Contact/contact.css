@@ -10,7 +10,7 @@ body {
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box; 
-    background-image: url('Imagens/contactfundo.png');
+    background-image: url('/Imagens/contactfundo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

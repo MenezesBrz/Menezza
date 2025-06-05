@@ -65,31 +65,23 @@
       </div>
 
       <!-------------------------------------------------TABS----------------------------------------------------->
-
-    <!--  <div class="tabs">
-        <button class="tab-btn active" onclick="showTab('mission', event)">Our Mission</button>
-        <button class="tab-btn" onclick="showTab('vision', event)">Our Vision</button>
-        <button class="tab-btn" onclick="showTab('value', event)">Our Value</button>
-      </div>
+      <div class="tabs-wrapper">
+        <div class="tabs">
+          <h4>Welcome to Menezza</h4>
+          <h1>Welcome to Autorepair</h1>
+          <p>We help more than 45 years serving customer car</p>
       
-      <div id="mission" class="tab-content active">
-        <p>Far far away, behind the word mountains... (Missão)</p>
-      </div>
-      <div id="vision" class="tab-content">
-        <p>Here comes the vision text... (Visão)</p>
-      </div>
-      <div id="value" class="tab-content">
-        <p>And here are the core values... (Valores)</p>
-      </div>
-
-      <script>
-        function showTab(tabId, event) {
-          document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-          document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-          document.getElementById(tabId).classList.add('active');
-          event.currentTarget.classList.add('active');
-        }
-      </script> -->
+          <div class="text-content" id="main-text">
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...
+          </div>
+      
+          <div class="buttons">
+            <button onclick="changeText('mission')">Our Mission</button>
+            <button onclick="changeText('vision')">Our Vision</button>
+            <button onclick="changeText('value')">Our Value</button>
+          </div>
+        </div>
+      </div>  
   
 </body>
 </html>

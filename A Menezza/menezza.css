@@ -216,6 +216,7 @@ body {
   }
 
   .tabs {
+    text-align: center;
     border: 1px solid red;
     max-width: 500%;
     margin: 0 auto;
@@ -226,16 +227,25 @@ body {
   }
 
   h1 {
-    font-size: 2em;
-    color: #7b3fe4;
+    transform: translateY(-0.7vw);
+    font-size: 1.5em;
+    color: black;
+
   }
 
   h4 {
+    color: grey;
     margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 1.5px;
+  }
+
+  p {
+    transform: translateY(-0.8vw);
+    color: grey;
+    font-weight: 500;
   }
 
   .buttons {
@@ -247,14 +257,14 @@ body {
     margin-right: 10px;
     border: none;
     border-radius: 8px;
-    background: #7b3fe4;
-    color: white;
+    background: grey;
+    color: black;
     cursor: pointer;
     transition: background 0.3s;
   }
 
   .buttons button:hover {
-    background: #5e2ec2;
+    background: #dcdcdc;
   }
 
   .text-content {

@@ -67,21 +67,35 @@
       <!-------------------------------------------------TABS----------------------------------------------------->
       <div class="tabs-wrapper">
         <div class="tabs">
-          <h4>Welcome to Menezza</h4>
-          <h1>Welcome to Autorepair</h1>
-          <p>We help more than 45 years serving customer car</p>
-      
-          <div class="text-content" id="main-text">
-            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...
-          </div>
+          <h4>Bem-vindo a Menezza</h4>
+          <h1>Seu Carro, Nossa Prioridade</h1>
+          <p>Na Menezza, dedicamos nossa expertise e paixão para cuidar do seu veículo com a máxima atenção e qualidade. Cada detalhe importa, porque sabemos que seu carro é mais do que um meio de transporte — é uma extensão do seu estilo e personalidade. Confie em nós para oferecer serviços automotivos que elevam a performance e a beleza do seu automóvel.</p>
       
           <div class="buttons">
             <button onclick="changeText('mission')">Our Mission</button>
             <button onclick="changeText('vision')">Our Vision</button>
             <button onclick="changeText('value')">Our Value</button>
           </div>
+
+          <div class="text-content" id="main-text">
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...
+          </div>
         </div>
       </div>  
+
+      <script>
+        function changeText(type) {
+          const textElement = document.getElementById("main-text");
+    
+          const texts = {
+            mission: "Our mission is to deliver high-quality car repair and customization, blending performance and design to fulfill your automotive dreams.",
+            vision: "Our vision is to be the most trusted name in the automotive world, pioneering innovation and inspiring car enthusiasts worldwide.",
+            value: "We value integrity, precision, and passion. Every detail matters in creating unforgettable automotive experiences for our clients."
+          };
+    
+          textElement.textContent = texts[type];
+        }
+      </script>
   
 </body>
 </html>

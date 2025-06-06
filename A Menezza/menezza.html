@@ -69,12 +69,11 @@
         <div class="tabs">
           <h4>Bem-vindo a Menezza</h4>
           <h1>Seu Carro, Nossa Prioridade</h1>
-          <p>Na Menezza, dedicamos nossa expertise e paixão para cuidar do seu veículo com a máxima atenção e qualidade. Cada detalhe importa, porque sabemos que seu carro é mais do que um meio de transporte — é uma extensão do seu estilo e personalidade. Confie em nós para oferecer serviços automotivos que elevam a performance e a beleza do seu automóvel.</p>
       
           <div class="buttons">
-            <button onclick="changeText('mission')">Our Mission</button>
-            <button onclick="changeText('vision')">Our Vision</button>
-            <button onclick="changeText('value')">Our Value</button>
+            <button onclick="changeText('mission')">Nossa Missão</button>
+            <button onclick="changeText('vision')">Nossa Visão</button>
+            <button onclick="changeText('value')">Nosso Valor</button>
           </div>
 
           <div class="text-content" id="main-text">
@@ -85,16 +84,23 @@
 
       <script>
         function changeText(type) {
-          const textElement = document.getElementById("main-text");
-    
-          const texts = {
-            mission: "Our mission is to deliver high-quality car repair and customization, blending performance and design to fulfill your automotive dreams.",
-            vision: "Our vision is to be the most trusted name in the automotive world, pioneering innovation and inspiring car enthusiasts worldwide.",
-            value: "We value integrity, precision, and passion. Every detail matters in creating unforgettable automotive experiences for our clients."
-          };
-    
-          textElement.textContent = texts[type];
-        }
+  const textElement = document.getElementById("main-text");
+  const texts = {
+    mission: "Na Menezza, nossa missão é redefinir o prazer de dirigir, unindo design arrojado, desempenho excepcional e inovação tecnológica. Criamos veículos que não apenas transportam, mas emocionam, conectando motorista e máquina em perfeita harmonia.",
+    vision: "Our vision is to be the most trusted name in the automotive world, pioneering innovation and inspiring car enthusiasts worldwide.",
+    value: "We value integrity, precision, and passion. Every detail matters in creating unforgettable automotive experiences for our clients."
+  };
+
+  // anima fade out
+  textElement.style.opacity = 0;
+
+  setTimeout(() => {
+    textElement.textContent = texts[type];
+    // anima fade in
+    textElement.style.opacity = 1;
+  }, 300);
+}
+
       </script>
   
 </body>

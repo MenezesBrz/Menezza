@@ -65,31 +65,60 @@
       </div>
 
       <!-------------------------------------------------TABS----------------------------------------------------->
-      <div class="tabs-wrapper">
-        <div class="tabs">
-          <h4>Bem-vindo a Menezza</h4>
-          <h1>Seu Carro, Nossa Prioridade</h1>
+      <section id="tabs-wrapper">
+        <div id="tabs-section">
+          <div class="about-content">
+            <!-- Left image -->
+            <div class="image-side">
+              <img src="/Imagens/engine (1).jpg" alt="Engine Image" />
+            </div>
       
-          <div class="buttons">
-            <button onclick="changeText('mission')">Nossa Missão</button>
-            <button onclick="changeText('vision')">Nossa Visão</button>
-            <button onclick="changeText('value')">Nosso Valor</button>
-          </div>
-
-          <div class="text-content" id="main-text">
-            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...
+            <!-- Side text -->
+            <div class="text-side">
+              <h5 class="highlight">Bem vindo a Menezza</h5>
+              <h2>O futuro da engenharia, esculpido em potência.</h2>
+              <p>
+                Na Menezza, combinamos precisão com paixão para criar experiências únicas. Cada escolha reflete um profundo respeito pela autenticidade e um compromisso com a inovação.
+              </p>
+      
+              <!-- Buttons -->
+              <div class="buttons">
+                <button onclick="changeText('mission')">Nossa Missão</button>
+                <button onclick="changeText('vision')">Nossa Visão</button>
+                <button onclick="changeText('value')">Nosso Valor</button>
+              </div>
+      
+              <div class="text-content" id="main-text">
+                Na Menezza, nossa missão é redefinir o prazer de dirigir, unindo design arrojado, desempenho excepcional e inovação tecnológica. Criamos veículos que não apenas transportam, mas emocionam, conectando motorista e máquina em perfeita harmonia.
+              </div>
+            </div>
           </div>
         </div>
-      </div>  
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <script>
         function changeText(type) {
   const textElement = document.getElementById("main-text");
   const texts = {
     mission: "Na Menezza, nossa missão é redefinir o prazer de dirigir, unindo design arrojado, desempenho excepcional e inovação tecnológica. Criamos veículos que não apenas transportam, mas emocionam, conectando motorista e máquina em perfeita harmonia.",
-    vision: "Our vision is to be the most trusted name in the automotive world, pioneering innovation and inspiring car enthusiasts worldwide.",
-    value: "We value integrity, precision, and passion. Every detail matters in creating unforgettable automotive experiences for our clients."
-  };
+    vision: "Ser referência global em excelência automotiva, desenvolvendo carros que antecipam o futuro da mobilidade, com elegância, sustentabilidade e performance. Buscamos inspirar uma nova geração de apaixonados por velocidade, precisão e estilo.",
+    value: `Paixão pela engenharia.\nRespeito pela autenticidade.\nCompromisso com a inovação.\nExcelência em cada detalhe.\nNa Menezza, cada escolha reflete o nosso propósito: transformar cada trajeto em uma experiência única.`};
 
   // anima fade out
   textElement.style.opacity = 0;

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../../../CursoJS"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "H. Menezza Automobili"
+	}
+}

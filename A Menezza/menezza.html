@@ -83,9 +83,9 @@
       
               <!-- Buttons -->
               <div class="buttons">
-                <button onclick="changeText('mission')">Nossa Missão</button>
-                <button onclick="changeText('vision')">Nossa Visão</button>
-                <button onclick="changeText('value')">Nosso Valor</button>
+                <button class="tab-button active" onclick="changeText('mission', this)">Nossa Missão</button>
+                <button class="tab-button" onclick="changeText('vision', this)">Nossa Visão</button>
+                <button class="tab-button" onclick="changeText('value', this)">Nosso Valor</button>
               </div>
       
               <div class="text-content" id="main-text">
@@ -96,40 +96,31 @@
         </div>
       </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <script>
-        function changeText(type) {
-  const textElement = document.getElementById("main-text");
-  const texts = {
-    mission: "Na Menezza, nossa missão é redefinir o prazer de dirigir, unindo design arrojado, desempenho excepcional e inovação tecnológica. Criamos veículos que não apenas transportam, mas emocionam, conectando motorista e máquina em perfeita harmonia.",
-    vision: "Ser referência global em excelência automotiva, desenvolvendo carros que antecipam o futuro da mobilidade, com elegância, sustentabilidade e performance. Buscamos inspirar uma nova geração de apaixonados por velocidade, precisão e estilo.",
-    value: `Paixão pela engenharia.\nRespeito pela autenticidade.\nCompromisso com a inovação.\nExcelência em cada detalhe.\nNa Menezza, cada escolha reflete o nosso propósito: transformar cada trajeto em uma experiência única.`};
-
-  // anima fade out
-  textElement.style.opacity = 0;
-
-  setTimeout(() => {
-    textElement.textContent = texts[type];
-    // anima fade in
-    textElement.style.opacity = 1;
-  }, 300);
-}
-
+        function changeText(type, button) {
+          const textElement = document.getElementById("main-text");
+          const buttons = document.querySelectorAll(".tab-button");
+          const texts = {
+            mission: "Na Menezza, nossa missão é redefinir o prazer de dirigir, unindo design arrojado, desempenho excepcional e inovação tecnológica. Criamos veículos que não apenas transportam, mas emocionam, conectando motorista e máquina em perfeita harmonia.",
+            vision: "Ser referência global em excelência automotiva, desenvolvendo carros que antecipam o futuro da mobilidade, com elegância, sustentabilidade e performance. Buscamos inspirar uma nova geração de apaixonados por velocidade, precisão e estilo.",
+            value: `Paixão pela engenharia.\nRespeito pela autenticidade.\nCompromisso com a inovação.\nExcelência em cada detalhe.\nNa Menezza, cada escolha reflete o nosso propósito: transformar cada trajeto em uma experiência única.`
+          };
+      
+          // remove classe active de todos os botões
+          buttons.forEach(btn => btn.classList.remove("active"));
+      
+          // adiciona classe active no botão clicado
+          button.classList.add("active");
+      
+          // anima fade out
+          textElement.style.opacity = 0;
+      
+          setTimeout(() => {
+            textElement.textContent = texts[type];
+            // anima fade in
+            textElement.style.opacity = 1;
+          }, 300);
+        }
       </script>
   
 </body>

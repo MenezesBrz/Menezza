@@ -13,6 +13,8 @@
 </head>
 
 <body>
+
+  <!-- ========================= HEADER SECTION ========================= -->
     <header class="top-bar">
         <div class="container">
           <div class="logo"><img src="../Imagens/Logo2.png"></div>
@@ -41,6 +43,7 @@
         </div>
       </header>
 
+      <!-- ========================= NAV SECTION ========================= -->
       <nav class="main-nav">
         <ul>
           <li><a href="/Index/index.html">HOME</a></li>
@@ -64,7 +67,7 @@
         <span class="breadcrumb-main">Menezza</span>
       </div>
 
-      <!-------------------------------------------------TABS----------------------------------------------------->
+      <!-- ========================= TABS SECTION ========================= -->
       <section id="tabs-wrapper">
         <div id="tabs-section">
           <div class="about-content">
@@ -121,6 +124,82 @@
             textElement.style.opacity = 1;
           }, 300);
         }
+      </script>
+
+
+      <!-- ========================= COUNTER SECTION ========================= -->
+      <section>
+        <div id="counter-wrapper">
+          <div id="counter-content">
+            <div class="counter-item">
+              <h3 class=".animate-text">45</h3>
+              <p class=".animate-text">Anos de Experiência</p>
+            </div>
+            <div class="counter-item">
+              <h3 class=".animate-text">8,500</h3>
+              <p class=".animate-text">Projetos Completos</p>
+            </div>
+            <div class="counter-item">
+              <h3 class=".animate-text">2,342</h3>
+              <p class=".animate-text">Clientes Satisfeitos</p>
+            </div>
+            <div class="counter-item">
+              <h3 class=".animate-text">30</h3>
+              <p class=".animate-text">Prêmios Conquistados</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        function animateCounters(duration = 3000) {
+        const counters = document.querySelectorAll(".counter-item h3");
+        const labels = document.querySelectorAll(".counter-item p");
+
+        counters.forEach(counter => {
+          // animação dos números (contagem)
+          const targetStr = counter.textContent.replace(/,/g, '');
+          const target = parseInt(targetStr, 10);
+          const startTime = performance.now();
+
+          function update(currentTime) {
+            const elapsed = currentTime - startTime;
+            if (elapsed < duration) {
+              const progress = elapsed / duration;
+              const currentNumber = Math.floor(progress * target);
+              counter.textContent = currentNumber.toLocaleString();
+              requestAnimationFrame(update);
+            } else {
+              counter.textContent = target.toLocaleString();
+            }
+          }
+          requestAnimationFrame(update);
+
+          // adiciona animação de entrada
+          counter.classList.add("animate-text");
+        });
+
+        labels.forEach(label => {
+          label.classList.add("animate-text");
+        });
+      }
+
+      // OBSERVER para ativar animação 1s depois que aparecer na tela
+      const counterSection = document.getElementById('counter-wrapper');
+      let animated = false;
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !animated) {
+            animated = true;
+            setTimeout(() => {
+              animateCounters(3000);
+            }, 300); // espera 1s antes de animar
+          }
+        });
+      }, { threshold: 0.5 });
+
+      observer.observe(counterSection);
       </script>
   
 </body>

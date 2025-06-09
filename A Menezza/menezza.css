@@ -329,3 +329,50 @@ body {
     color: white;
     transition: all ease 0.5s; 
   }
+
+  /* ------------------------------ COUNTER  -----------------------------*/
+
+  #counter-wrapper {
+    background: #1c1c1c;
+    padding: 60px 20px;
+  }
+  
+  #counter-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .counter-item h3 {
+    font-size: 3rem;
+    color: #ff9900; 
+    margin: 0;
+    font-weight: 700;
+    font-family: 'Arial Black', sans-serif;
+  }
+  
+  .counter-item p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #c4c4c4;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  @keyframes slideDownFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-text {
+    animation: slideDownFadeIn 0.5s ease forwards;
+  }

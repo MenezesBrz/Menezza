@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -152,7 +153,7 @@
       </section>
 
       <script>
-        function animateCounters(duration = 3000) {
+        function animateCounters(duration = 5000) {
         const counters = document.querySelectorAll(".counter-item h3");
         const labels = document.querySelectorAll(".counter-item p");
 
@@ -193,14 +194,50 @@
           if (entry.isIntersecting && !animated) {
             animated = true;
             setTimeout(() => {
-              animateCounters(3000);
-            }, 300); // espera 1s antes de animar
+              animateCounters(10000);
+            }, 300);
           }
         });
       }, { threshold: 0.5 });
 
       observer.observe(counterSection);
       </script>
+
+      <!-- ========================= FORM SECTION ========================= -->
+      <section id="form">
+        <span id="image-form">
+          <img src="/Imagens/AboutUs-form (4).jpg" alt="Engine Image" loading="lazy" />
+        </span>
+      
+        <div id="side-form">
+          <h5 class="highlight">Marcar um Atendimento</h5>
+          <h2>Consulta Gratuita</h2>
+      
+          <form>
+            <select id="service" name="service" required>
+              <option value="tire-change">Troca de pneus</option>
+              <option value="change-oil">Troca de óleo</option>
+              <option value="engine-repair">Reparo no motor</option>
+              <option value="battery-replace">Troca de bateria</option>
+              <option value="tow-truck">Guincho</option>
+            </select>
+      
+            <div class="form-row">
+              <input type="text" placeholder="Seu nome" required>
+              <input type="text" placeholder="Número do veículo" required>
+            </div>
+      
+            <div class="form-row">
+              <input type="date" placeholder="Data" required>
+              <input type="time" placeholder="Hora" required>
+            </div>
+      
+            <textarea placeholder="Mensagem" rows="5"></textarea>
+      
+            <button type="submit">ENVIAR</button>
+          </form>
+        </div>
+      </section>
   
 </body>
 </html>

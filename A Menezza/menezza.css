@@ -425,9 +425,9 @@ body {
     margin-top: 2vw;
   }
 
-  select,
-  input,
-  textarea {
+  #form select,
+  #form input,
+  #form textarea {
     width: 100%;
     padding: 0.75rem;
     border: 1px solid #ccc;
@@ -472,3 +472,63 @@ body {
       flex-direction: column;
     }
   }
+
+  /* ------------------------------ CAROUSEL  -----------------------------*/
+  .carousel-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .client img {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .carousel-dots {
+    margin-top: 20px;
+  }
+  
+  .dot {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .dot.active {
+    background-color: #007bff;
+  }
+  
+  
+  
+  

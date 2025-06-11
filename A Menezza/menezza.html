@@ -274,28 +274,154 @@
               </div>
             </div>
           </div>
+      
+          <div class="card"> <!-- Slide 4 -->
+            <p>Far far away, behind the word mountains...</p>
+            <div class="client">
+              <img src="https://i.pravatar.cc/100?img=8" alt="Roger" />
+              <div>
+                <strong>Roger Scott</strong>
+                <p>Marketing Manager</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="card"> <!-- Slide 5 -->
+            <p>Far far away, behind the word mountains...</p>
+            <div class="client">
+              <img src="https://i.pravatar.cc/100?img=15" alt="Roger" />
+              <div>
+                <strong>Roger Scott</strong>
+                <p>Marketing Manager</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="card"> <!-- Slide 6 -->
+            <p>Far far away, behind the word mountains...</p>
+            <div class="client">
+              <img src="https://i.pravatar.cc/100?img=20" alt="Roger" />
+              <div>
+                <strong>Roger Scott</strong>
+                <p>Marketing Manager</p>
+              </div>
+            </div>
+          </div>
         </div>
       
-        <div class="carousel-dots">
-          <span class="dot active" onclick="moveToSlide(0)"></span>
-          <span class="dot" onclick="moveToSlide(1)"></span>
-          <span class="dot" onclick="moveToSlide(2)"></span>
-        </div>
+        <div class="carousel-dots"></div>
       </section>
       
       <script>
         const track = document.querySelector('.carousel-track');
-        const dots = document.querySelectorAll('.dot');
+        let cards = Array.from(track.children);
+      
+        const cardsPerView = 3;
+        const cardMargin = 10; // margin total horizontal (5 + 5)
+        let cardWidth = cards[0].offsetWidth + cardMargin;
+      
+        let currentIndex = cardsPerView; // começamos no primeiro card original (depois dos clones)
+      
+        // Clonar os últimos cardsPerView para o início
+        for(let i = cards.length - cardsPerView; i < cards.length; i++) {
+          let clone = cards[i].cloneNode(true);
+          clone.classList.add('clone');
+          track.insertBefore(clone, track.firstChild);
+        }
+      
+        // Clonar os primeiros cardsPerView para o fim
+        for(let i = 0; i < cardsPerView; i++) {
+          let clone = cards[i].cloneNode(true);
+          clone.classList.add('clone');
+          track.appendChild(clone);
+        }
+      
+        // Atualizar lista de cards após clonar
+        cards = Array.from(track.children);
+        cardWidth = cards[0].offsetWidth + cardMargin;
+      
+        // Ajusta o transform para o primeiro card original
+        track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+      
+        // Criar dots dinamicamente
+        const dotsContainer = document.querySelector('.carousel-dots');
+        const totalSlides = cards.length - cardsPerView * 2; // só os originais
+        let dots = [];
+      
+        for(let i = 0; i < totalSlides; i++) {
+          let dot = document.createElement('span');
+          dot.classList.add('dot');
+          if(i === 0) dot.classList.add('active');
+          dot.addEventListener('click', () => moveToSlide(i));
+          dotsContainer.appendChild(dot);
+          dots.push(dot);
+        }
       
         function moveToSlide(index) {
-          const slideWidth = document.querySelector('.card').clientWidth;
-          track.style.transform = `translateX(-${index * slideWidth}px)`;
+          currentIndex = index + cardsPerView; // ajusta pelo número de clones no começo
+          moveTrack();
+          updateDots(index);
+        }
       
-          // Mudar a bolinha azul
+        function moveTrack() {
+          track.style.transition = 'transform 0.5s ease-in-out';
+          track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        }
+      
+        function updateDots(index) {
           dots.forEach(dot => dot.classList.remove('active'));
           dots[index].classList.add('active');
         }
+      
+        // Loop infinito: ajustar quando chegar nos clones
+        track.addEventListener('transitionend', () => {
+          if(cards[currentIndex].classList.contains('clone')) {
+            track.style.transition = 'none';
+            if(currentIndex >= cards.length - cardsPerView) {
+              // saltar para o primeiro card original
+              currentIndex = cardsPerView;
+            } else if(currentIndex < cardsPerView) {
+              // saltar para o último card original
+              currentIndex = cards.length - cardsPerView * 2;
+            }
+            track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+            updateDots(currentIndex - cardsPerView);
+          }
+        });
+      
+        // Drag to scroll com mouse (sem seleção de texto)
+        let isDragging = false, startX = 0, currentTranslate = 0, prevTranslate = 0, animationID;
+      
+        track.addEventListener('mousedown', (e) => {
+          isDragging = true;
+          startX = e.pageX;
+          prevTranslate = -currentIndex * cardWidth;
+          track.style.transition = 'none';
+        });
+      
+        window.addEventListener('mouseup', (e) => {
+          if(!isDragging) return;
+          isDragging = false;
+          const movedBy = e.pageX - startX;
+      
+          if(movedBy < -cardWidth / 4 && currentIndex < cards.length - 1) {
+            currentIndex++;
+          } else if(movedBy > cardWidth / 4 && currentIndex > 0) {
+            currentIndex--;
+          }
+      
+          moveTrack();
+        });
+      
+        window.addEventListener('mousemove', (e) => {
+          if(!isDragging) return;
+          const currentX = e.pageX;
+          const diff = currentX - startX;
+          currentTranslate = prevTranslate + diff;
+          track.style.transform = `translateX(${currentTranslate}px)`;
+        });
       </script>
+      
       
       
   

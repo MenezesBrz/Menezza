@@ -477,29 +477,39 @@ body {
   .carousel-container {
     width: 100%;
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
     overflow: hidden;
-    padding: 40px 0;
-    user-select: none; /* bloqueia seleção de texto */
+    padding: 5vw 0;
+    padding-right: 2vw;
+    user-select: none;
     position: relative;
+    text-align: center;
   }
 
   .carousel-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
     will-change: transform;
+    padding-top: 3vw;
   }
 
   .card {
     flex: 0 0 calc(100% / 3);
     box-sizing: border-box;
     padding: 20px;
-    background: #fff;
+    background: #f3f2f2;
     border-radius: 10px;
     box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1);
     margin: 0 5px;
-    text-align: center;
-    user-select: none; /* bloqueia seleção nos cards */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+  }
+
+  .card p {
+    flex-grow: 1;
   }
 
   .client {
@@ -532,7 +542,22 @@ body {
   }
 
   .dot.active {
-    background-color: #007bff;
+    background-color: #2e2e2e;
+  }
+
+  .carousel-container .main-title {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: grey;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 1vw;
+  }
+
+  .carousel-container .main-title2 {
+    font-size: 28px;
+    margin-top: -0.8vw;
+    letter-spacing: 0.5px;
   }
   
   

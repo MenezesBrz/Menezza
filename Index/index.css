@@ -17,7 +17,7 @@
   } 
 
 
-/*------------------------------------------- NON-DEFINITIVE -------------------------------------------*/
+/*------------------------------------------- REUSABLES -------------------------------------------*/
 
 .padding-little-top {
   padding-top: 20px;
@@ -28,11 +28,14 @@
   text-shadow: 13 13 4px rgba(0, 0, 0, 1);
 }
 
+  .break {
+    display: block;
+  }
 
   /*------------------------------------------- CONTAINER 1 -------------------------------------------*/
   
 
-  #container {
+  #site-header {
     width: 100%;
     min-height: 110vh;
     box-sizing: border-box; 
@@ -43,7 +46,6 @@
   }
   
   #navbar  {
-    border: 1px solid red;
     width: 100%;
     padding: 6px 16px;
     background: #f4f4f4;
@@ -52,7 +54,7 @@
     justify-content: space-between;
   }
 
-  .logo {
+  .brand {
     height: 5.5rem;
     width: auto;
   }
@@ -81,19 +83,16 @@
     color: black;
     text-decoration: none;
     font-size: 16px;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
   }
 
   .nav-links a:hover {
     color: black;
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
-    border-bottom: 3px solid black;
+    border-bottom: 2px solid black;
     padding-bottom: 5px;
   }
 
-  .botao-quadrado-menu {
+  .nav-button {
     background-color: black;
     color: #f4f4f4;
     padding: 15px 32px;        
@@ -104,15 +103,23 @@
     cursor: pointer;           
     transition: background-color 0.3s; 
     font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     white-space: nowrap;
   }
 
-  .botao-quadrado-menu:hover {
+  .nav-button:hover {
     background-color: #999999; 
     color: #f4f4f4;  
   } 
 
-  #conteúdo {
+  #hero {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 5rem;
+  }
+
+  .hero-content {
     color: #f4f4f4;
     padding: 50px 50px;
     font-family: 'Poppins', sans-serif;
@@ -124,41 +131,39 @@
     text-shadow: 13 13 4px rgba(0, 0, 0, 1);
   }
 
-  #conteúdo p {
+  .hero-content p {
     color: #f4f4f4;
-    font-size: 18px;
+    font-size: 20px;
     max-width: 500px;
-    font-size: 11px;
-    letter-spacing: 13;
+    padding-top: 1.5rem;
+    font-size: 13px;
+    letter-spacing: 3;
     font-family: 'Poppins', sans-serif;
-    font-weight: 0;
     line-height: 1.5;
-    text-shadow: 13 13 4px rgba(0, 0, 0, 1); 
+    text-shadow: 2px -2px 3px rgba(0, 0, 0, 1); 
   }
 
-  .botao-arredondado {
+  .hero-button {
     background-color: #f4f4f4;  
     color: black;
-    padding: 15px 32px;        
+    padding: 15px 32px;
+    margin-top: 3rem;   
+    font-weight: 600;      
     text-align: center;         
     text-decoration: none;      
     display: inline-block;       
-    font-size: 16px;            
+    font-size: 1rem;            
     border: none;               
     border-radius: 30px;        
     cursor: pointer;           
     transition: background-color 0.3s; 
-    position: relative;
-    top: 100px;
-    left: 170px;
     font-family: 'Poppins', sans-serif;
   }
 
-  .botao-arredondado:hover {
+  .hero-button:hover {
     background-color: #999999;  
     color: black;
   }
-
 
   /*------------------------------------------- CONTAINER 2 -------------------------------------------*/
 

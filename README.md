@@ -6,6 +6,7 @@ A corporate website for Menezza Automobili, a fictional luxury and sports car co
 ## Technologies Used
 - HTML5
 - CSS3
+- JS
 
 ## Folder Structure
 - `/A Menezza/` — main HTML and CSS files

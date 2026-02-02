@@ -505,3 +505,56 @@ body {
     flex-direction: column;
   }
 }
+
+/* --- Animations --- */
+
+/* Reveal on Scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered delays for children if needed */
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+
+/* Hero Animation Initial State */
+.hero-content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-out;
+}
+
+.hero-content.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile Menu Active State (Ensure this matches JS toggle) */
+@media (max-width: 768px) {
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Adjust based on header height */
+        right: 0;
+        width: 100%;
+        background-color: #fff; /* Or header background */
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        padding: 20px;
+        z-index: 1000;
+        animation: slideDown 0.3s ease forwards;
+    }
+
+    @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+}

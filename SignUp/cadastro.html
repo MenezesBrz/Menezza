@@ -1,104 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
+<html lang="en">
 
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="cadastro.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menezza - Sign Up</title>
+  <link rel="stylesheet" href="cadastro.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 
-  <body>
+<body>
 
-    <div class="container">
-      <h1>Sign Up</h1>
-  
-      <form>
-        <label for="Nome"></label>
-        <input 
-          type="text" 
-          name="Name" 
-          placeholder="Nome" 
-          id="Nome"
-          onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder='';" 
-          onblur="this.placeholder = this.getAttribute('data-placeholder');"
-        >
+  <div class="auth-wrapper">
+    <div class="auth-container">
+      <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
 
-
-
-        <label for="Email"></label>
-        <input class="thirdinput"
-          type="text" 
-          name="Email" 
-          placeholder="Email" 
-          id="Email"
-          onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder='';" 
-          onblur="this.placeholder = this.getAttribute('data-placeholder');"
-        >
-
-
-
-        <label for="senha"></label>
-        <input class="secondinput" 
-          type="password" 
-          name="senha" 
-          placeholder="Senha" 
-          id="senha"
-          onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder='';" 
-          onblur="this.placeholder = this.getAttribute('data-placeholder');"
-        >
-      </form>
-      <form>
-
-        <label for="submit"></label>
-        <input class="submit"
-        type="submit"
-        name="submit"
-        placeholder="submit"
-        id="submit"
-        >
-      </form>
-
-     <h4 class="forget"><a href="LogIn/login.html">Já possui uma conta?</a></h4>
-
+      <div class="auth-header">
+        <h1>Create Account</h1>
+        <p>Join the Menezza experience</p>
       </div>
 
+      <form class="auth-form">
+        <div class="input-group">
+          <input type="text" id="name" name="Name" required placeholder=" " autocomplete="off">
+          <label for="name">Full Name</label>
+        </div>
 
+        <div class="input-group">
+          <input type="email" id="email" name="Email" required placeholder=" " autocomplete="off">
+          <label for="email">Email</label>
+        </div>
 
-      <script>
-        function removePlaceholder() {
-            document.getElementById('name').placeholder = '';
-        }
-    </script>
-    <script>
-     const nomeInput = document.getElementById("Nome");
-const emailInput = document.getElementById("Email");
-const senhaInput = document.getElementById("senha");
+        <div class="input-group">
+          <input type="password" id="password" name="password" required placeholder=" ">
+          <label for="password">Password</label>
+        </div>
 
-// Evento de "input" para adicionar a classe 'typing' quando o usuário começar a digitar
-nomeInput.addEventListener("input", function () {
-  if (this.value.length > 0) {
-    this.classList.add("typing");
-  } else {
-    this.classList.remove("typing");
-  }
-});
+        <button type="submit" class="btn-submit">REGISTER</button>
+      </form>
 
-emailInput.addEventListener("input", function () {
-  if (this.value.length > 0) {
-    this.classList.add("typing");
-  } else {
-    this.classList.remove("typing");
-  }
-});
+      <div class="auth-footer">
+        <p>Already have an account? <a href="../login/login.html">Log In</a></p>
+      </div>
+    </div>
+  </div>
 
-senhaInput.addEventListener("input", function () {
-  if (this.value.length > 0) {
-    this.classList.add("typing");
-  } else {
-    this.classList.remove("typing");
-  }
-});
-    </script>
+</body>
 
-  </body>
 </html>

@@ -1,79 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
+<html lang="en">
 
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="login.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menezza - Login</title>
+  <link rel="stylesheet" href="login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 
-  <body>
+<body>
 
-    <div class="container">
-      <h1>Log In</h1>
-  
-      <form>
-        <label for="Email"></label>
-        <input 
-          type="text" 
-          name="Name" 
-          placeholder="Email" 
-          id="Email"
-          onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder='';" 
-          onblur="this.placeholder = this.getAttribute('data-placeholder');"
-        >
-        <label for="senha"></label>
-        <input class="secondinput" 
-          type="password" 
-          name="senha" 
-          placeholder="Senha" 
-          id="senha"
-          onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder='';" 
-          onblur="this.placeholder = this.getAttribute('data-placeholder');"
-        >
-      </form>
-      <form>
+  <div class="auth-wrapper">
+    <div class="auth-container">
+      <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
 
-        <label for="submit"></label>
-        <input class="submit"
-        type="submit"
-        name="submit"
-        placeholder="submit"
-        id="submit"
-        >
-      </form>
-
-     <h4 class="forget"><a href="">Esqueceu sua senha?</a></h4>
-
+      <div class="auth-header">
+        <h1>Welcome</h1>
+        <p>Log in to continue</p>
       </div>
 
+      <form class="auth-form">
+        <div class="input-group">
+          <input type="email" id="email" name="Email" required placeholder=" " autocomplete="off">
+          <label for="email">Email</label>
+        </div>
 
+        <div class="input-group">
+          <input type="password" id="password" name="password" required placeholder=" ">
+          <label for="password">Password</label>
+        </div>
 
-      <script>
-        function removePlaceholder() {
-            document.getElementById('name').placeholder = '';
-        }
-    </script>
-    <script>
-      const nameInput = document.getElementById("Email");
-      const senhaInput = document.getElementById("senha");
-    
-      nameInput.addEventListener("input", function () {
-        if (this.value.length > 0) {
-          this.classList.add("typing");
-        } else {
-          this.classList.remove("typing");
-        }
-      });
-    
-      senhaInput.addEventListener("input", function () {
-        if (this.value.length > 0) {
-          this.classList.add("typing");
-        } else {
-          this.classList.remove("typing");
-        }
-      });
-    </script>
+        <div class="form-options">
+          <a href="#" class="forgot-password">Forgot your password?</a>
+        </div>
 
-  </body>
+        <button type="submit" class="btn-submit">LOGIN</button>
+      </form>
+
+      <div class="auth-footer">
+        <p>Don't have an account? <a href="../Signup/cadastro.html">Sign Up</a></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
 </html>

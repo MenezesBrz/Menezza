@@ -1,488 +1,382 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>A Menezza</title>
+  <title>The Menezza</title>
   <link rel="stylesheet" href="menezza.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- ========================= HEADER SECTION ========================= -->
-
-    <header class="top-bar">
-        <div class="container">
-          <div class="logo"><img src="../Imagens/Logo2.png"></div>
-          <div class="contact-info">
-            <div class="info">
-              <i class="fas fa-home"></i>
-              <div>
-                <small>ADDRESS</small>
-                <p>721 New York NY 10016</p>
-              </div>
-            </div>
-            <div class="info">
-              <i class="fas fa-phone"></i>
-              <div>
-                <small>CALL US</small>
-                <p>(+01) 123 456 7890</p>
-              </div>
-            </div>
-            <div class="social-icons">
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-dribbble"></i>
-            </div>
+  <!-- ========================= TOP BAR ========================= -->
+  <div class="top-bar">
+    <div class="container">
+      <a href="../index.html" class="logo-link">
+        <img src="../images/logo2.png" alt="Menezza" class="logo-img">
+      </a>
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fas fa-home"></i>
+          <div>
+            <small>ADDRESS</small>
+            <p>721 New York NY 10016</p>
           </div>
         </div>
-      </header>
-
-      <!-- ========================= NAV SECTION ========================= -->
-
-      <nav class="main-nav">
-        <ul>
-          <li><a href="/Index/index.html">HOME</a></li>
-          <li><a  class="active"  href="#">MENEZZA</a></li>
-          <li><a href="#">TIME</a></li>
-          <li><a href="/Services/servicos.html">SERVIÇOS</a></li>
-          <li><a href="#">PROJETO</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="/Contact/contact.html">CONTATO</a></li>
-        </ul>
-        <div class="search-bar">
-          <input type="text" placeholder="Search">
-          <button><i class="fas fa-magnifying-glass"></i></button>
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <small>CALL US</small>
+            <p>(+01) 123 456 7890</p>
+          </div>
         </div>
-      </nav>
-      <div id="background">
-        <span class="breadcrumb-home"><a href="index.html">Home</a></span>
-        <span class="arrow"><i class="fas fa-angle-right"></i></span>
-        <span class="breadcrumb-services">Menezza</span>
-        <span class="arrow"><i class="fas fa-angle-right"></i></span>
-        <span class="breadcrumb-main">Menezza</span>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-dribbble"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================= NAV SECTION ========================= -->
+  <nav class="main-nav">
+    <div class="container nav-container">
+      <ul class="nav-links">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="menezza.html" class="active">THE MENEZZA</a></li>
+        <li><a href="#">TEAM</a></li>
+        <li><a href="../Services/servicos.html">SERVICES</a></li>
+        <li><a href="#">PROJECT</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="../Contact/contact.html">CONTACT</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================= HERO HEADER ========================= -->
+  <header id="page-header">
+    <div class="overlay">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a> <i class="fas fa-angle-right arrow"></i>
+        <span>Menezza</span> <i class="fas fa-angle-right arrow"></i>
+        <span class="current">Menezza</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================= TABS SECTION ========================= -->
+  <section id="tabs-wrapper">
+    <div class="container about-content">
+      <!-- Left image -->
+      <div class="image-side">
+        <img src="../images/engine (1).jpg" alt="Engine Image" />
       </div>
 
-      <!-- ========================= TABS SECTION ========================= -->
+      <!-- Side text -->
+      <div class="text-side">
+        <h5 class="highlight-text">Welcome to Menezza</h5>
+        <h2>The future of engineering, sculpted in power.</h2>
+        <p>
+          Far from ordinary roads and busy city traffic, there is Menezza — a place where precision meets passion.
+          Between innovation and tradition, every detail matters. From the elegant lines of our cars to the roar of
+          every engine, Menezza is synonymous with authenticity. Like a river nurturing the land, our commitment flows
+          into every creation, transforming each experience into a journey made with heart and mastery.
+        </p>
 
-      <section id="tabs-wrapper">
-        <div id="tabs-section">
-          <div class="about-content">
-            <!-- Left image -->
-            <div class="image-side">
-              <img src="/Imagens/engine (1).jpg" alt="Engine Image" />
-            </div>
-      
-            <!-- Side text -->
-            <div class="text-side">
-              <h5 class="highlight">Bem vindo a Menezza</h5>
-              <h2>O futuro da engenharia, esculpido em potência.</h2>
-              <p>
-                Longe das estradas comuns e do trânsito agitado das cidades, existe a Menezza — um lugar onde a precisão se encontra com a paixão. Entre a inovação e a tradição, cada detalhe importa. Das linhas elegantes dos nossos carros ao rugido de cada motor, a Menezza é sinônimo de autenticidade. Como um rio que nutre a terra, nosso compromisso flui em cada criação, transformando cada experiência em uma jornada feita com coração e maestria.
-              </p>
-      
-              <!-- Buttons -->
-              <div class="buttons">
-                <button class="tab-button active" onclick="changeText('mission', this)">Nossa Missão</button>
-                <button class="tab-button" onclick="changeText('vision', this)">Nossa Visão</button>
-                <button class="tab-button" onclick="changeText('value', this)">Nosso Valor</button>
-              </div>
-      
-              <div class="text-content" id="main-text">
-                Na Menezza, nossa missão é redefinir o prazer de dirigir, unindo design arrojado, desempenho excepcional e inovação tecnológica. Criamos veículos que não apenas transportam, mas emocionam, conectando motorista e máquina em perfeita harmonia.
-              </div>
-            </div>
-          </div>
+        <!-- Buttons -->
+        <div class="tab-buttons">
+          <button class="tab-button active" onclick="changeText('mission', this)">Our Mission</button>
+          <button class="tab-button" onclick="changeText('vision', this)">Our Vision</button>
+          <button class="tab-button" onclick="changeText('value', this)">Our Values</button>
         </div>
-      </section>
 
-      <script>
-        function changeText(type, button) {
-          const textElement = document.getElementById("main-text");
-          const buttons = document.querySelectorAll(".tab-button");
-          const texts = {
-            mission: "Na Menezza, nossa missão é redefinir o prazer de dirigir, unindo design arrojado, desempenho excepcional e inovação tecnológica. Criamos veículos que não apenas transportam, mas emocionam, conectando motorista e máquina em perfeita harmonia.",
-            vision: "Ser referência global em excelência automotiva, desenvolvendo carros que antecipam o futuro da mobilidade, com elegância, sustentabilidade e performance. Buscamos inspirar uma nova geração de apaixonados por velocidade, precisão e estilo.",
-            value: `Paixão pela engenharia.\nRespeito pela autenticidade.\nCompromisso com a inovação.\nExcelência em cada detalhe.\nNa Menezza, cada escolha reflete o nosso propósito: transformar cada trajeto em uma experiência única.`
-          };
-      
-          // remove classe active de todos os botões
-          buttons.forEach(btn => btn.classList.remove("active"));
-      
-          // adiciona classe active no botão clicado
-          button.classList.add("active");
-      
-          // anima fade out
-          textElement.style.opacity = 0;
-      
-          setTimeout(() => {
-            textElement.textContent = texts[type];
-            // anima fade in
-            textElement.style.opacity = 1;
-          }, 300);
-        }
-      </script>
-
-
-      <!-- ========================= COUNTER SECTION ========================= -->
-
-      <section>
-        <div id="counter-wrapper">
-          <div id="counter-content">
-            <div class="counter-item">
-              <h3 class=".animate-text">45</h3>
-              <p class=".animate-text">Anos de Experiência</p>
-            </div>
-            <div class="counter-item">
-              <h3 class=".animate-text">8,500</h3>
-              <p class=".animate-text">Projetos Completos</p>
-            </div>
-            <div class="counter-item">
-              <h3 class=".animate-text">2,342</h3>
-              <p class=".animate-text">Clientes Satisfeitos</p>
-            </div>
-            <div class="counter-item">
-              <h3 class=".animate-text">30</h3>
-              <p class=".animate-text">Prêmios Conquistados</p>
-            </div>
-          </div>
+        <div class="text-content-box" id="main-text">
+          At Menezza, our mission is to redefine the pleasure of driving, uniting bold design, exceptional performance,
+          and technological innovation. We create vehicles that do not just transport, but thrill, connecting driver and
+          machine in perfect harmony.
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <script>
-        function animateCounters(duration = 5000) {
-        const counters = document.querySelectorAll(".counter-item h3");
-        const labels = document.querySelectorAll(".counter-item p");
+  <script>
+    function changeText(type, button) {
+      const textElement = document.getElementById("main-text");
+      const buttons = document.querySelectorAll(".tab-button");
+      const texts = {
+        mission: "At Menezza, our mission is to redefine the pleasure of driving, uniting bold design, exceptional performance, and technological innovation. We create vehicles that do not just transport, but thrill, connecting driver and machine in perfect harmony.",
+        vision: "To be a global reference in automotive excellence, developing cars that anticipate the future of mobility, with elegance, sustainability, and performance. We seek to inspire a new generation passionate about speed, precision, and style.",
+        value: "Passion for engineering. Respect for authenticity. Commitment to innovation. Excellence in every detail. At Menezza, every choice reflects our purpose: to transform every journey into a unique experience."
+      };
 
-        counters.forEach(counter => {
-          // animação dos números (contagem)
-          const targetStr = counter.textContent.replace(/,/g, '');
-          const target = parseInt(targetStr, 10);
-          const startTime = performance.now();
+      buttons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
 
-          function update(currentTime) {
-            const elapsed = currentTime - startTime;
-            if (elapsed < duration) {
-              const progress = elapsed / duration;
-              const currentNumber = Math.floor(progress * target);
-              counter.textContent = currentNumber.toLocaleString();
-              requestAnimationFrame(update);
-            } else {
-              counter.textContent = target.toLocaleString();
-            }
+      textElement.style.opacity = 0;
+
+      setTimeout(() => {
+        textElement.textContent = texts[type];
+        textElement.style.opacity = 1;
+      }, 300);
+    }
+  </script>
+
+  <!-- ========================= COUNTER SECTION ========================= -->
+  <section id="counter-section">
+    <div class="container counter-grid">
+      <div class="counter-item">
+        <h3 class="animate-text">45</h3>
+        <p class="animate-text">Years of Experience</p>
+      </div>
+      <div class="counter-item">
+        <h3 class="animate-text">8,500</h3>
+        <p class="animate-text">Completed Projects</p>
+      </div>
+      <div class="counter-item">
+        <h3 class="animate-text">2,342</h3>
+        <p class="animate-text">Satisfied Clients</p>
+      </div>
+      <div class="counter-item">
+        <h3 class="animate-text">30</h3>
+        <p class="animate-text">Awards Won</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function animateCounters(duration = 5000) {
+      const counters = document.querySelectorAll(".counter-item h3");
+
+      counters.forEach(counter => {
+        const targetStr = counter.textContent.replace(/,/g, '');
+        const target = parseInt(targetStr, 10);
+        const startTime = performance.now();
+
+        function update(currentTime) {
+          const elapsed = currentTime - startTime;
+          if (elapsed < duration) {
+            const progress = elapsed / duration;
+            const currentNumber = Math.floor(progress * target);
+            counter.textContent = currentNumber.toLocaleString();
+            requestAnimationFrame(update);
+          } else {
+            counter.textContent = target.toLocaleString();
           }
-          requestAnimationFrame(update);
+        }
+        requestAnimationFrame(update);
+      });
+    }
 
-          // adiciona animação de entrada
-          counter.classList.add("animate-text");
-        });
+    const counterSection = document.getElementById('counter-section');
+    let animated = false;
 
-        labels.forEach(label => {
-          label.classList.add("animate-text");
-        });
-      }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !animated) {
+          animated = true;
+          animateCounters(3000);
+        }
+      });
+    }, { threshold: 0.5 });
 
-      // OBSERVER para ativar animação 1s depois que aparecer na tela
-      const counterSection = document.getElementById('counter-wrapper');
-      let animated = false;
+    observer.observe(counterSection);
+  </script>
 
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting && !animated) {
-            animated = true;
-            setTimeout(() => {
-              animateCounters(10000);
-            }, 0);
-          }
-        });
-      }, { threshold: 0.5 });
+  <!-- ========================= FORM SECTION ========================= -->
+  <section id="form-section">
+    <div class="form-container">
+      <div class="form-image">
+        <img src="../images/aboutUs (4).jpg" alt="Mechanic" loading="lazy" />
+      </div>
 
-      observer.observe(counterSection);
-      </script>
+      <div class="form-content">
+        <h5 class="highlight-text">Schedule a Service</h5>
+        <h2>Free Consultation</h2>
 
-      <!-- ========================= FORM SECTION ========================= -->
+        <form class="consultation-form">
+          <select id="service" name="service" required>
+            <option value="tire-change">Tire Change</option>
+            <option value="change-oil">Oil Change</option>
+            <option value="engine-repair">Engine Repair</option>
+            <option value="battery-replace">Battery Replacement</option>
+            <option value="tow-truck">Towing</option>
+          </select>
 
-      <section id="form">
-        <span id="image-form">
-          <img src="/Imagens/AboutUs-form (4).jpg" alt="Engine Image" loading="lazy" />
-        </span>
-      
-        <div id="side-form">
-          <h5 class="highlight">Marcar um Atendimento</h5>
-          <h2>Consulta Gratuita</h2>
-      
-          <form>
-            <select id="service" name="service" required>
-              <option value="tire-change">Troca de pneus</option>
-              <option value="change-oil">Troca de óleo</option>
-              <option value="engine-repair">Reparo no motor</option>
-              <option value="battery-replace">Troca de bateria</option>
-              <option value="tow-truck">Guincho</option>
-            </select>
-      
-            <div class="form-row">
-              <input type="text" placeholder="Seu nome" required>
-              <input type="text" placeholder="Número do veículo" required>
-            </div>
-      
-            <div class="form-row">
-              <input type="date" placeholder="Data" required>
-              <input type="time" placeholder="Hora" required>
-            </div>
-      
-            <textarea placeholder="Mensagem" rows="5"></textarea>
-      
-            <button type="submit">ENVIAR</button>
-          </form>
-        </div>
-      </section>
-
-      <!-- ========================= CAROUSEL SECTION ========================= -->
-
-      <section class="carousel-container">
-          <h3 class="main-title">Na Pista com a Menezza</h3>
-          <h2 class="main-title2">Feedback de clientes</h2>
-        <div class="carousel-track">
-          <div class="card">
-            <p>"A Menezza me impressionou com o cuidado técnico e a precisão dos detalhes. O desempenho dos modelos é de altíssimo nível. Me senti dirigindo uma obra-prima da engenharia."</p>
-            <div class="client">
-              <img src="https://i.pravatar.cc/100?img=12" alt="Lucas Andrade" />
-              <div>
-                <strong>Lucas Andrade</strong>
-                <p>Engenheiro Mecânico</p>
-              </div>
-            </div>
+          <div class="form-row">
+            <input type="text" placeholder="Your name" required>
+            <input type="text" placeholder="Vehicle number" required>
           </div>
-          <div class="card">
-            <p>"Os carros da Menezza têm uma estética ousada e moderna. Dá pra ver que há uma visão criativa por trás de cada linha. Estou apaixonada pela identidade visual da marca!"</p>
-            <div class="client">
-              <img src="https://i.pravatar.cc/100?img=32" alt="Isabela Martins" />
-              <div>
-                <strong>Isabela Martins</strong>
-                <p>Estudante de Design Automotivo</p>
-              </div>
-            </div>
+
+          <div class="form-row">
+            <input type="date" placeholder="Date" required>
+            <input type="time" placeholder="Time" required>
           </div>
-          <div class="card">
-            <p>"Trabalho há anos com manutenção e raramente vejo uma construção tão limpa e confiável. A Menezza entrega qualidade de verdade sob o capô."</p>
-            <div class="client">
-              <img src="https://i.pravatar.cc/100?img=48" alt="Juliana Costa" />
-              <div>
-                <strong>Juliana Costa</strong>
-                <p>Mecânica Automotiva</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <p>"Além dos carros incríveis, o site da Menezza é intuitivo e rápido. A experiência digital me convenceu antes mesmo de ver os modelos pessoalmente."</p>
-            <div class="client">
-              <img src="https://i.pravatar.cc/100?img=8" alt="Renato Silva" />
-              <div>
-                <strong>Renato Silva</strong>
-                <p>Desenvolvedor de Software</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <p>"O ronco do motor da E36 da Menezza virou trilha sonora no meu dia a dia. É potência, estilo e alma. Um carro que transmite emoção de verdade."</p>
-            <div class="client">
-              <img src="https://i.pravatar.cc/100?img=15" alt="Eduardo Reis" />
-              <div>
-                <strong>Eduardo Reis</strong>
-                <p>Músico</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <p>"A Menezza sabe como construir uma marca de impacto. Dos carros ao atendimento, tudo exala exclusividade e confiança. Uma empresa que sabe se posicionar."</p>
-            <div class="client">
-              <img src="https://i.pravatar.cc/100?img=20" alt="Carla Menezes" />
-              <div>
-                <strong>Carla Menezes</strong>
-                <p>Executiva de Marketing</p>
-              </div>
+
+          <textarea placeholder="Message" rows="5"></textarea>
+
+          <button type="submit" class="btn-submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CAROUSEL SECTION ========================= -->
+  <section class="carousel-section">
+    <div class="carousel-header">
+      <h3 class="sub-title">On the Track with Menezza</h3>
+      <h2 class="main-title">Customer Feedback</h2>
+    </div>
+
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <!-- Cards will be manipulated by JS -->
+        <div class="card">
+          <p>"Menezza impressed me with technical care and precision of details. The performance of the models is top
+            level."</p>
+          <div class="client">
+            <img src="https://i.pravatar.cc/100?img=12" alt="Lucas Andrade" />
+            <div>
+              <strong>Lucas Andrade</strong>
+              <p>Mechanical Engineer</p>
             </div>
           </div>
         </div>
-      
-        <div class="carousel-dots"></div>
-      </section>
-      
-      <script>
-        const track = document.querySelector('.carousel-track');
-        let cards = Array.from(track.children);
-      
-        const cardsPerView = 3;
-        const cardMargin = 10; // margin total horizontal (5 + 5)
-        let cardWidth = cards[0].offsetWidth + cardMargin;
-      
-        let currentIndex = cardsPerView; // começamos no primeiro card original (depois dos clones)
-      
-        // Clonar os últimos cardsPerView para o início
-        for(let i = cards.length - cardsPerView; i < cards.length; i++) {
-          let clone = cards[i].cloneNode(true);
-          clone.classList.add('clone');
-          track.insertBefore(clone, track.firstChild);
-        }
-      
-        // Clonar os primeiros cardsPerView para o fim
-        for(let i = 0; i < cardsPerView; i++) {
-          let clone = cards[i].cloneNode(true);
-          clone.classList.add('clone');
-          track.appendChild(clone);
-        }
-      
-        // Atualizar lista de cards após clonar
-        cards = Array.from(track.children);
-        cardWidth = cards[0].offsetWidth + cardMargin;
-      
-        // Ajusta o transform para o primeiro card original
-        track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-      
-        // Criar dots dinamicamente
-        const dotsContainer = document.querySelector('.carousel-dots');
-        const totalSlides = cards.length - cardsPerView * 2; // só os originais
-        let dots = [];
-      
-        for(let i = 0; i < totalSlides; i++) {
-          let dot = document.createElement('span');
-          dot.classList.add('dot');
-          if(i === 0) dot.classList.add('active');
-          dot.addEventListener('click', () => moveToSlide(i));
-          dotsContainer.appendChild(dot);
-          dots.push(dot);
-        }
-      
-        function moveToSlide(index) {
-          currentIndex = index + cardsPerView; // ajusta pelo número de clones no começo
-          moveTrack();
-          updateDots(index);
-        }
-      
-        function moveTrack() {
+
+        <div class="card">
+          <p>"Menezza cars have a bold and modern aesthetic. You can see there is a creative vision behind every line."
+          </p>
+          <div class="client">
+            <img src="https://i.pravatar.cc/100?img=32" alt="Isabela Martins" />
+            <div>
+              <strong>Isabela Martins</strong>
+              <p>Design Student</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <p>"I have worked for years with maintenance and rarely see such clean and reliable construction. Menezza
+            delivers real quality."</p>
+          <div class="client">
+            <img src="https://i.pravatar.cc/100?img=48" alt="Juliana Costa" />
+            <div>
+              <strong>Juliana Costa</strong>
+              <p>Automotive Mechanic</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <p>"Besides the incredible cars, the Menezza website is intuitive and fast. The digital experience convinced
+            me."</p>
+          <div class="client">
+            <img src="https://i.pravatar.cc/100?img=8" alt="Renato Silva" />
+            <div>
+              <strong>Renato Silva</strong>
+              <p>Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-dots"></div>
+    </div>
+  </section>
+
+  <script>
+    const track = document.querySelector('.carousel-track');
+    window.addEventListener('load', () => {
+      let cards = Array.from(track.children);
+      if (cards.length === 0) return;
+
+      const cardStyle = window.getComputedStyle(cards[0]);
+      const cardMargin = parseFloat(cardStyle.marginLeft) + parseFloat(cardStyle.marginRight);
+      const cardWidth = cards[0].offsetWidth + cardMargin;
+
+      let currentIndex = 0;
+
+      setInterval(() => {
+        currentIndex++;
+        if (currentIndex >= cards.length) {
+          currentIndex = 0;
+          track.style.transition = 'none';
+          track.style.transform = `translateX(0)`;
+          // trigger Reflow
+          void track.offsetWidth;
           track.style.transition = 'transform 0.5s ease-in-out';
+        } else {
           track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
         }
-      
-        function updateDots(index) {
-          dots.forEach(dot => dot.classList.remove('active'));
-          dots[index].classList.add('active');
-        }
-      
-        // Loop infinito: ajustar quando chegar nos clones
-        track.addEventListener('transitionend', () => {
-          if(cards[currentIndex].classList.contains('clone')) {
-            track.style.transition = 'none';
-            if(currentIndex >= cards.length - cardsPerView) {
-              // saltar para o primeiro card original
-              currentIndex = cardsPerView;
-            } else if(currentIndex < cardsPerView) {
-              // saltar para o último card original
-              currentIndex = cards.length - cardsPerView * 2;
-            }
-            track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-            updateDots(currentIndex - cardsPerView);
-          }
-        });
-      
-        // Drag to scroll com mouse (sem seleção de texto)
-        let isDragging = false, startX = 0, currentTranslate = 0, prevTranslate = 0, animationID;
-      
-        track.addEventListener('mousedown', (e) => {
-          isDragging = true;
-          startX = e.pageX;
-          prevTranslate = -currentIndex * cardWidth;
-          track.style.transition = 'none';
-        });
-      
-        window.addEventListener('mouseup', (e) => {
-          if(!isDragging) return;
-          isDragging = false;
-          const movedBy = e.pageX - startX;
-      
-          if(movedBy < -cardWidth / 4 && currentIndex < cards.length - 1) {
-            currentIndex++;
-          } else if(movedBy > cardWidth / 4 && currentIndex > 0) {
-            currentIndex--;
-          }
-      
-          moveTrack();
-        });
-      
-        window.addEventListener('mousemove', (e) => {
-          if(!isDragging) return;
-          const currentX = e.pageX;
-          const diff = currentX - startX;
-          currentTranslate = prevTranslate + diff;
-          track.style.transform = `translateX(${currentTranslate}px)`;
-        });
-      </script>
+      }, 3000);
+    });
+  </script>
 
-      <!-- ========================= FOOTER SECTION ========================= -->
-
-<footer id="footer">
-  <div id="footer-section">
-    <div class="footer-card-menezza">
-      <h1>MENEZZA</h1>
-      <p>A Menezza nasceu de ideias ousadas e caminhos sonhados. Mais que veículos, criamos símbolos em movimento, com elegância e precisão.</p>
-      <div class="footer-social-icons">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
+  <!-- ========================= FOOTER ========================= -->
+  <footer id="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>MENEZZA</h3>
+        <p>Menezza was born from bold ideas and dreamed paths. More than vehicles, we create symbols in motion, with
+          elegance and precision.</p>
+        <div class="footer-social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
       </div>
-    </div>
 
-    <div class="footer-card-services">
-      <h1>Services</h1>
-      <div class="footer-services-li">
-        <img src="/Icons/check-svgrepo-com.svg" /> <p>Troca de óleo</p><br>
-        <img src="/Icons/check-svgrepo-com.svg" /> <p>Bateria</p><br>
-        <img src="/Icons/check-svgrepo-com.svg" /> <p>Guincho</p><br>
-        <img src="/Icons/check-svgrepo-com.svg" /> <p>Troca de pneus</p><br>
-        <img src="/Icons/check-svgrepo-com.svg" /> <p>Reparo no motor</p>
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul class="footer-list">
+          <li><img src="../icons/check-svgrepo-com.svg" alt="check"> Oil Change</li>
+          <li><img src="../icons/check-svgrepo-com.svg" alt="check"> Battery</li>
+          <li><img src="../icons/check-svgrepo-com.svg" alt="check"> Towing</li>
+          <li><img src="../icons/check-svgrepo-com.svg" alt="check"> Tire Change</li>
+          <li><img src="../icons/check-svgrepo-com.svg" alt="check"> Engine Repair</li>
+        </ul>
       </div>
-    </div>
-    </div>
 
-    <div class="footer-card-contact">
-      <h1>Contact</h1>
-      <div class="footer-contact-icons">
-        <li type="none">
-          <ul><i class="fas fa-home"></i><p>35 Afonso Pena St, BH, MG</p></ul>
-          <ul><i class="fas fa-phone-alt"></i><p>+55 (31) 99999-9999</p></ul>
-          <ul><i class="fas fa-envelope"></i><p>MenezzaAutomobilli@gmail.com</p></ul>
-        </li>  
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul class="footer-list contact-list">
+          <li><i class="fas fa-home"></i> 35 Afonso Pena St, BH, MG</li>
+          <li><i class="fas fa-phone-alt"></i> +55 (31) 99999-9999</li>
+          <li><i class="fas fa-envelope"></i> MenezzaAutomobilli@gmail.com</li>
+        </ul>
       </div>
-    </div>
 
-    <div class="footer-card-hour">
-      <h1>Horários</h1>
-       <span>Dias de funcionamento:</span>
-        <p class="n1-p">   
-          Segunda a Sexta-feira: das 9h às 20h
-          Sábado: das 9h às 17h
+      <div class="footer-col">
+        <h3>Hours</h3>
+        <span>Opening Days:</span>
+        <p class="hours-text">
+          Monday to Friday: 9am to 8pm<br>
+          Saturday: 9am to 5pm
         </p>
-
-        <span>Férias:</span>
-        <p class="n2-p">   
-          Todos os domingos<br>
-          Todos os feriados oficiais
+        <span>Holidays:</span>
+        <p class="hours-text">
+          All Sundays<br>
+          All official holidays
         </p>
+      </div>
     </div>
 
-    <p id="copyright">
+    <div class="footer-bottom">
       Copyright ©2025 Menezza. All rights reserved.
-    </p>
+    </div>
+  </footer>
 
-  </div>
-</footer>  
-  
 </body>
+
 </html>

@@ -1007,33 +1007,262 @@ body {
   transform: translateY(0);
 }
 
-/* Mobile Menu Active State (Ensure this matches JS toggle) */
-@media (max-width: 768px) {
-  .nav-links.active {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    /* Adjust based on header height */
-    right: 0;
-    width: 100%;
-    background-color: #fff;
-    /* Or header background */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    z-index: 1000;
-    animation: slideDown 0.3s ease forwards;
+/* Section Spacer */
+.section-spacer {
+  height: 100px;
+  /* Equivalent to roughly 3-4 brs or nice whitespace */
+  width: 100%;
+  background: transparent;
+}
+
+/* ================= RESPONSIVE ADJUSTMENTS (< 900px) ================= */
+@media (max-width: 900px) {
+
+  /* --- Hamburger Menu & Navigation --- */
+  .hamburger {
+    display: block;
+    z-index: 1001;
+    position: relative;
   }
 
-  @keyframes slideDown {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    /* Dark overlay */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    /* Hidden by default */
+    transition: transform 0.4s ease-in-out;
+    z-index: 1000;
+    gap: 2rem;
+  }
 
-    to {
-      opacity: 1;
-      transform: translateY(0);
+  .nav-links.active {
+    transform: translateX(0);
+    /* Slide in */
+    display: flex;
+    /* Ensure flex is active */
+  }
+
+  .nav-link a {
+    font-size: 1.5rem;
+  }
+
+  /* Adjust Nav Actions (Create Account / Hamburger) */
+  .nav-actions {
+    z-index: 1002;
+    /* Above menu overlay */
+  }
+
+  /* Hide 'Create Account' button on smaller screens to save space if needed, 
+       or keep it. Let's hide it on very small screens, keep for tablet. */
+  @media (max-width: 600px) {
+    .nav-button {
+      display: none;
     }
+  }
+
+  /* --- Section Layouts: Side-by-Side (FORCED) --- */
+
+  /* Ensure .split-layout does NOT wrap to column for Commitment, but Success wraps now */
+  .split-layout {
+    flex-wrap: nowrap !important;
+    flex-direction: row !important;
+    overflow-x: hidden;
+  }
+
+  /* Success Section: Revert to Stacked (User Request) */
+  #success .split-layout.reverse-mobile {
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
+  }
+
+  /* Adjust sizing: Commitment stays side-by-side, Success goes full width */
+  #commitment .text-content,
+  #commitment .commitment-img {
+    flex: 1 1 50%;
+    min-width: 0;
+    padding: 2rem 1.5rem;
+    width: 50%;
+  }
+
+  /* Success Section overrides */
+  /* Success Section overrides */
+  #success .text-content,
+  #success .side-content {
+    flex: 1 1 100%;
+    width: 100%;
+    min-width: auto;
+    padding: 3rem 1.5rem;
+    /* Center Alignment (User Request) */
+    text-align: center !important;
+    align-items: center !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Center specific elements in Services */
+  .header-line {
+    margin: 0 auto 2rem auto !important;
+  }
+
+  .services-list {
+    width: 100%;
+  }
+
+  .service-item {
+    justify-content: center;
+  }
+
+  /* Commitment Section: Hide Image, Full Width Text (User Request) */
+  #commitment .commitment-img {
+    display: none;
+  }
+
+  #commitment .text-content {
+    flex: 1 1 100%;
+    width: 100%;
+    padding: 2rem;
+    /* Center Alignment (User Request) */
+    text-align: center !important;
+    align-items: center !important;
+  }
+
+  #commitment .section-body p {
+    text-align: center !important;
+  }
+
+  .commitment-list {
+    justify-content: center !important;
+  }
+
+  /* Reduce font sizes to fit side-by-side */
+  .section-header h1,
+  #success .text-content h1,
+  .hero-content h1 {
+    font-size: 1.8rem;
+    /* Smaller headings */
+    word-wrap: break-word;
+    /* Prevent overflow */
+  }
+
+  .section-body p,
+  #success .success-body p {
+    font-size: 0.9rem;
+    /* Smaller text */
+  }
+
+  /* Specific Adjustments for Success Section Left Side */
+  #success .text-content {
+    padding: 3rem 1.5rem;
+  }
+
+  /* Hide the Quote or secondary elements if it gets too tight?
+       User asked for side-by-side, so we keep it, just shrunken. */
+
+
+  /* --- Mobility Section Responsiveness --- */
+  .hero-like-section {
+    padding: 3rem 1.5rem;
+    min-height: auto;
+    /* Allow height to adjust to content */
+    background-attachment: scroll;
+    /* Fix for mobile browser perfs/bugs */
+    justify-content: center;
+    /* Center content on mobile */
+  }
+
+  .overlay-content {
+    transform: skewX(0);
+    /* Remove skew for simpler mobile layout */
+    border-left: 2px solid var(--primary-color);
+    /* Thinner border */
+    padding: 2rem;
+    width: 100%;
+    text-align: left;
+    /* Keep left alignment or center if preferred? User implied layout issues, likely overflow. Left is safe. */
+  }
+
+  .mobility-header,
+  .mobility-body {
+    transform: skewX(0);
+    /* Reset counter-skew */
+  }
+
+  .mobility-header h1 {
+    font-size: 2rem;
+    /* Smaller heading */
+  }
+
+  /* --- Footer Simplification --- */
+  /* Hide Services and Hours columns on mobile/tablet */
+  .footer-container {
+    display: flex;
+    /* Override grid */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .footer-col {
+    display: none;
+    width: 100%;
+  }
+
+  /* Show only Brand and Contact */
+  .brand-col {
+    display: block;
+    order: 1;
+  }
+
+  .footer-col:nth-child(3) {
+    display: block;
+    order: 2;
+  }
+
+  .footer-col:nth-child(2),
+  .footer-col:nth-child(4) {
+    display: none;
+  }
+
+  .footer-social {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+}
+
+/* Very Small Screens (< 480px) Tweaks */
+@media (max-width: 480px) {
+
+  #commitment .text-content,
+  #success .text-content,
+  #success .side-content {
+    padding: 1rem;
+    /* Tiny padding */
+  }
+
+  /* On extremely small screens, side-by-side might be impossible to read.
+       But user requested it. We obey. 
+       Maybe scale down font further. */
+  .section-header h1,
+  #success .text-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .section-body p {
+    font-size: 0.8rem;
   }
 }

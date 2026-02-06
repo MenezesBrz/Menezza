@@ -68,24 +68,27 @@
   <!-- ========================= HERO HEADER ========================= -->
   <header id="page-header">
     <div class="overlay">
+      <div class="hero-text-content">
+        <h1 class="hero-title">The Menezza Legacy</h1>
+        <p class="hero-subtitle">Where precision meets passion, and innovation drives excellence</p>
+        <a href="#about-story" class="hero-cta">Discover Our Story</a>
+      </div>
       <div class="breadcrumb">
         <a href="../index.html">Home</a> <i class="fas fa-angle-right arrow"></i>
         <span>Menezza</span> <i class="fas fa-angle-right arrow"></i>
-        <span class="current">Menezza</span>
+        <span class="current">The Menezza</span>
       </div>
     </div>
   </header>
 
-  <!-- ========================= TABS SECTION ========================= -->
-  <section id="tabs-wrapper">
-    <div class="container about-content">
-      <!-- Left image -->
-      <div class="image-side">
-        <img src="../images/engine (1).jpg" alt="Engine Image" />
+  <!-- ========================= ABOUT STORY SECTION ========================= -->
+  <section id="about-story">
+    <div class="story-container">
+      <div class="story-image">
+        <img src="../images/engine (1).jpg" alt="Menezza Engine" />
+        <div class="image-overlay"></div>
       </div>
-
-      <!-- Side text -->
-      <div class="text-side">
+      <div class="story-content">
         <h5 class="highlight-text">Welcome to Menezza</h5>
         <h2>The future of engineering, sculpted in power.</h2>
         <p>
@@ -94,61 +97,89 @@
           every engine, Menezza is synonymous with authenticity. Like a river nurturing the land, our commitment flows
           into every creation, transforming each experience into a journey made with heart and mastery.
         </p>
+      </div>
+    </div>
+  </section>
 
-        <!-- Buttons -->
-        <div class="tab-buttons">
-          <button class="tab-button active" onclick="changeText('mission', this)">Our Mission</button>
-          <button class="tab-button" onclick="changeText('vision', this)">Our Vision</button>
-          <button class="tab-button" onclick="changeText('value', this)">Our Values</button>
+  <!-- ========================= MISSION VISION VALUES CARDS ========================= -->
+  <section id="mvv-section">
+    <div class="container">
+      <div class="section-header-center">
+        <h5 class="highlight-text">Our Foundation</h5>
+        <h2>What Drives Us Forward</h2>
+      </div>
+
+      <div class="mvv-grid">
+        <div class="mvv-card">
+          <div class="card-icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3>Our Mission</h3>
+          <p>
+            At Menezza, our mission is to redefine the pleasure of driving, uniting bold design, exceptional
+            performance,
+            and technological innovation. We create vehicles that do not just transport, but thrill, connecting driver
+            and
+            machine in perfect harmony.
+          </p>
         </div>
 
-        <div class="text-content-box" id="main-text">
-          At Menezza, our mission is to redefine the pleasure of driving, uniting bold design, exceptional performance,
-          and technological innovation. We create vehicles that do not just transport, but thrill, connecting driver and
-          machine in perfect harmony.
+        <div class="mvv-card">
+          <div class="card-icon">
+            <i class="fas fa-eye"></i>
+          </div>
+          <h3>Our Vision</h3>
+          <p>
+            To be a global reference in automotive excellence, developing cars that anticipate the future of mobility,
+            with
+            elegance, sustainability, and performance. We seek to inspire a new generation passionate about speed,
+            precision,
+            and style.
+          </p>
+        </div>
+
+        <div class="mvv-card">
+          <div class="card-icon">
+            <i class="fas fa-gem"></i>
+          </div>
+          <h3>Our Values</h3>
+          <p>
+            Passion for engineering. Respect for authenticity. Commitment to innovation. Excellence in every detail.
+            At Menezza, every choice reflects our purpose: to transform every journey into a unique experience.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <script>
-    function changeText(type, button) {
-      const textElement = document.getElementById("main-text");
-      const buttons = document.querySelectorAll(".tab-button");
-      const texts = {
-        mission: "At Menezza, our mission is to redefine the pleasure of driving, uniting bold design, exceptional performance, and technological innovation. We create vehicles that do not just transport, but thrill, connecting driver and machine in perfect harmony.",
-        vision: "To be a global reference in automotive excellence, developing cars that anticipate the future of mobility, with elegance, sustainability, and performance. We seek to inspire a new generation passionate about speed, precision, and style.",
-        value: "Passion for engineering. Respect for authenticity. Commitment to innovation. Excellence in every detail. At Menezza, every choice reflects our purpose: to transform every journey into a unique experience."
-      };
-
-      buttons.forEach(btn => btn.classList.remove("active"));
-      button.classList.add("active");
-
-      textElement.style.opacity = 0;
-
-      setTimeout(() => {
-        textElement.textContent = texts[type];
-        textElement.style.opacity = 1;
-      }, 300);
-    }
-  </script>
-
   <!-- ========================= COUNTER SECTION ========================= -->
   <section id="counter-section">
     <div class="container counter-grid">
       <div class="counter-item">
+        <div class="counter-icon">
+          <i class="fas fa-award"></i>
+        </div>
         <h3 class="animate-text">45</h3>
         <p class="animate-text">Years of Experience</p>
       </div>
       <div class="counter-item">
+        <div class="counter-icon">
+          <i class="fas fa-project-diagram"></i>
+        </div>
         <h3 class="animate-text">8,500</h3>
         <p class="animate-text">Completed Projects</p>
       </div>
       <div class="counter-item">
+        <div class="counter-icon">
+          <i class="fas fa-users"></i>
+        </div>
         <h3 class="animate-text">2,342</h3>
         <p class="animate-text">Satisfied Clients</p>
       </div>
       <div class="counter-item">
+        <div class="counter-icon">
+          <i class="fas fa-trophy"></i>
+        </div>
         <h3 class="animate-text">30</h3>
         <p class="animate-text">Awards Won</p>
       </div>
@@ -204,9 +235,11 @@
       <div class="form-content">
         <h5 class="highlight-text">Schedule a Service</h5>
         <h2>Free Consultation</h2>
+        <p class="form-description">Book your appointment and experience premium automotive care</p>
 
         <form class="consultation-form">
           <select id="service" name="service" required>
+            <option value="">Select a Service</option>
             <option value="tire-change">Tire Change</option>
             <option value="change-oil">Oil Change</option>
             <option value="engine-repair">Engine Repair</option>
@@ -226,7 +259,10 @@
 
           <textarea placeholder="Message" rows="5"></textarea>
 
-          <button type="submit" class="btn-submit">SEND</button>
+          <button type="submit" class="btn-submit">
+            <span>SEND REQUEST</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
         </form>
       </div>
     </div>
@@ -243,6 +279,9 @@
       <div class="carousel-track">
         <!-- Cards will be manipulated by JS -->
         <div class="card">
+          <div class="quote-icon">
+            <i class="fas fa-quote-left"></i>
+          </div>
           <p>"Menezza impressed me with technical care and precision of details. The performance of the models is top
             level."</p>
           <div class="client">
@@ -255,6 +294,9 @@
         </div>
 
         <div class="card">
+          <div class="quote-icon">
+            <i class="fas fa-quote-left"></i>
+          </div>
           <p>"Menezza cars have a bold and modern aesthetic. You can see there is a creative vision behind every line."
           </p>
           <div class="client">
@@ -267,6 +309,9 @@
         </div>
 
         <div class="card">
+          <div class="quote-icon">
+            <i class="fas fa-quote-left"></i>
+          </div>
           <p>"I have worked for years with maintenance and rarely see such clean and reliable construction. Menezza
             delivers real quality."</p>
           <div class="client">
@@ -279,6 +324,9 @@
         </div>
 
         <div class="card">
+          <div class="quote-icon">
+            <i class="fas fa-quote-left"></i>
+          </div>
           <p>"Besides the incredible cars, the Menezza website is intuitive and fast. The digital experience convinced
             me."</p>
           <div class="client">
@@ -296,30 +344,46 @@
   </section>
 
   <script>
+    // Improved Infinite Carousel Loop
     const track = document.querySelector('.carousel-track');
-    window.addEventListener('load', () => {
-      let cards = Array.from(track.children);
-      if (cards.length === 0) return;
 
-      const cardStyle = window.getComputedStyle(cards[0]);
+    window.addEventListener('load', () => {
+      const originalCards = Array.from(track.children);
+      if (originalCards.length === 0) return;
+
+      // Clone all cards and append them to create infinite loop effect
+      originalCards.forEach(card => {
+        const clone = card.cloneNode(true);
+        track.appendChild(clone);
+      });
+
+      // Get all cards including clones
+      const allCards = Array.from(track.children);
+      const cardStyle = window.getComputedStyle(allCards[0]);
       const cardMargin = parseFloat(cardStyle.marginLeft) + parseFloat(cardStyle.marginRight);
-      const cardWidth = cards[0].offsetWidth + cardMargin;
+      const cardWidth = allCards[0].offsetWidth + cardMargin;
 
       let currentIndex = 0;
+      const totalOriginalCards = originalCards.length;
 
-      setInterval(() => {
+      // Auto-scroll function
+      function scrollCarousel() {
         currentIndex++;
-        if (currentIndex >= cards.length) {
-          currentIndex = 0;
-          track.style.transition = 'none';
-          track.style.transform = `translateX(0)`;
-          // trigger Reflow
-          void track.offsetWidth;
-          track.style.transition = 'transform 0.5s ease-in-out';
-        } else {
-          track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        track.style.transition = 'transform 0.6s ease-in-out';
+        track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+        // When we reach the cloned cards, reset to the beginning seamlessly
+        if (currentIndex >= totalOriginalCards) {
+          setTimeout(() => {
+            track.style.transition = 'none';
+            currentIndex = 0;
+            track.style.transform = `translateX(0)`;
+          }, 600); // Wait for transition to complete
         }
-      }, 3000);
+      }
+
+      // Start auto-scrolling
+      setInterval(scrollCarousel, 3500);
     });
   </script>
 

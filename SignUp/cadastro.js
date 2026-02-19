@@ -43,15 +43,15 @@ if (passwordInput && strengthIndicator) {
         if (strength.score <= 2) {
             strengthFill.classList.add('weak');
             strengthText.classList.add('weak');
-            strengthText.textContent = 'Weak password';
+            strengthText.textContent = 'Weak';
         } else if (strength.score <= 3) {
             strengthFill.classList.add('medium');
             strengthText.classList.add('medium');
-            strengthText.textContent = 'Medium password';
+            strengthText.textContent = 'Medium';
         } else {
             strengthFill.classList.add('strong');
             strengthText.classList.add('strong');
-            strengthText.textContent = 'Strong password';
+            strengthText.textContent = 'Strong';
         }
     });
 }
@@ -81,7 +81,7 @@ if (signupForm) {
 
         const name = document.getElementById('name').value.trim();
         const email = document.getElementById('email').value.trim();
-        const phone = document.getElementById('phone').value.trim();
+        // Phone is optional
         const password = document.getElementById('password').value;
         const confirmPassword = document.getElementById('confirmPassword').value;
         const termsChecked = document.getElementById('terms').checked;
@@ -126,7 +126,6 @@ if (signupForm) {
         // Simulate registration process
         const submitBtn = this.querySelector('.btn-submit');
         const btnText = submitBtn.querySelector('.btn-text');
-        const originalText = btnText.textContent;
 
         btnText.textContent = 'Creating Account...';
         submitBtn.disabled = true;
@@ -136,10 +135,10 @@ if (signupForm) {
             showNotification('Account created successfully! Redirecting...', 'success');
 
             setTimeout(() => {
-                // Redirect to login page or dashboard
+                // Redirect to login page
                 window.location.href = '../login/login.html';
-            }, 1500);
-        }, 2000);
+            }, 1000);
+        }, 1500);
     });
 }
 
@@ -151,7 +150,7 @@ function isValidEmail(email) {
 
 // Notification system
 function showNotification(message, type = 'info') {
-    // Remove existing notification if any
+    // Reuse the same notification function structure
     const existingNotification = document.querySelector('.notification');
     if (existingNotification) {
         existingNotification.remove();
@@ -166,12 +165,10 @@ function showNotification(message, type = 'info') {
 
     document.body.appendChild(notification);
 
-    // Trigger animation
     setTimeout(() => {
         notification.classList.add('show');
     }, 10);
 
-    // Remove after 4 seconds
     setTimeout(() => {
         notification.classList.remove('show');
         setTimeout(() => {
@@ -180,15 +177,15 @@ function showNotification(message, type = 'info') {
     }, 4000);
 }
 
-// Add notification styles dynamically
+// Add notification styles dynamically (matching login.js)
 const notificationStyles = document.createElement('style');
 notificationStyles.textContent = `
   .notification {
     position: fixed;
     top: 20px;
     right: 20px;
-    background: rgba(26, 26, 26, 0.98);
-    backdrop-filter: blur(20px);
+    background: rgba(20, 20, 20, 0.95);
+    backdrop-filter: blur(10px);
     color: #fff;
     padding: 16px 24px;
     border-radius: 12px;
@@ -198,9 +195,9 @@ notificationStyles.textContent = `
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 10000;
-    transform: translateX(400px);
+    transform: translateX(100%);
     opacity: 0;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
   }
@@ -214,35 +211,17 @@ notificationStyles.textContent = `
     font-size: 18px;
   }
   
-  .notification-success {
-    border-left: 3px solid #10b981;
-  }
-  
-  .notification-success i {
-    color: #10b981;
-  }
-  
-  .notification-error {
-    border-left: 3px solid #ef4444;
-  }
-  
-  .notification-error i {
-    color: #ef4444;
-  }
-  
-  .notification-info {
-    border-left: 3px solid #d4af37;
-  }
-  
-  .notification-info i {
-    color: #d4af37;
-  }
+  .notification-success i { color: #10b981; }
+  .notification-error i { color: #ef4444; }
+  .notification-info i { color: #d4af37; }
   
   @media (max-width: 600px) {
     .notification {
+      top: 10px;
       right: 10px;
       left: 10px;
-      transform: translateY(-100px);
+      width: auto;
+      transform: translateY(-20px);
     }
     
     .notification.show {
@@ -262,18 +241,6 @@ socialButtons.forEach(btn => {
     });
 });
 
-// Input animation on focus
-const inputs = document.querySelectorAll('.input-group input');
-inputs.forEach(input => {
-    input.addEventListener('focus', function () {
-        this.parentElement.classList.add('focused');
-    });
-
-    input.addEventListener('blur', function () {
-        this.parentElement.classList.remove('focused');
-    });
-});
-
 // Real-time password match validation
 const confirmPasswordInput = document.getElementById('confirmPassword');
 if (confirmPasswordInput && passwordInput) {
@@ -285,7 +252,7 @@ if (confirmPasswordInput && passwordInput) {
                 this.style.borderColor = '#ef4444';
             }
         } else {
-            this.style.borderColor = '';
+            this.style.borderColor = ''; // return to default
         }
     });
 }

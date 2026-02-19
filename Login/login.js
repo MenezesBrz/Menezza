@@ -37,6 +37,8 @@ if (loginForm) {
         // Simulate login process
         const submitBtn = this.querySelector('.btn-submit');
         const btnText = submitBtn.querySelector('.btn-text');
+        
+        // Save original text if needed, but for now just change it
         const originalText = btnText.textContent;
 
         btnText.textContent = 'Logging in...';
@@ -47,9 +49,9 @@ if (loginForm) {
             showNotification('Login successful! Redirecting...', 'success');
 
             setTimeout(() => {
-                // Redirect to home page or dashboard
+                // Redirect to home page
                 window.location.href = '../index.html';
-            }, 1500);
+            }, 1000);
         }, 1500);
     });
 }
@@ -98,8 +100,8 @@ notificationStyles.textContent = `
     position: fixed;
     top: 20px;
     right: 20px;
-    background: rgba(26, 26, 26, 0.98);
-    backdrop-filter: blur(20px);
+    background: rgba(20, 20, 20, 0.95);
+    backdrop-filter: blur(10px);
     color: #fff;
     padding: 16px 24px;
     border-radius: 12px;
@@ -109,9 +111,9 @@ notificationStyles.textContent = `
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 10000;
-    transform: translateX(400px);
+    transform: translateX(100%);
     opacity: 0;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
   }
@@ -125,35 +127,17 @@ notificationStyles.textContent = `
     font-size: 18px;
   }
   
-  .notification-success {
-    border-left: 3px solid #10b981;
-  }
-  
-  .notification-success i {
-    color: #10b981;
-  }
-  
-  .notification-error {
-    border-left: 3px solid #ef4444;
-  }
-  
-  .notification-error i {
-    color: #ef4444;
-  }
-  
-  .notification-info {
-    border-left: 3px solid #d4af37;
-  }
-  
-  .notification-info i {
-    color: #d4af37;
-  }
+  .notification-success i { color: #10b981; }
+  .notification-error i { color: #ef4444; }
+  .notification-info i { color: #d4af37; }
   
   @media (max-width: 600px) {
     .notification {
+      top: 10px;
       right: 10px;
       left: 10px;
-      transform: translateY(-100px);
+      width: auto;
+      transform: translateY(-20px);
     }
     
     .notification.show {
@@ -170,17 +154,5 @@ socialButtons.forEach(btn => {
         const platform = this.classList.contains('google') ? 'Google' :
             this.classList.contains('facebook') ? 'Facebook' : 'Apple';
         showNotification(`${platform} login coming soon!`, 'info');
-    });
-});
-
-// Input animation on focus
-const inputs = document.querySelectorAll('.input-group input');
-inputs.forEach(input => {
-    input.addEventListener('focus', function () {
-        this.parentElement.classList.add('focused');
-    });
-
-    input.addEventListener('blur', function () {
-        this.parentElement.classList.remove('focused');
     });
 });

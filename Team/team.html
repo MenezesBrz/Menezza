@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Team - Menezza Automobili</title>
+    <meta name="description"
+        content="Meet the visionaries, engineers, and designers behind Menezza Automobili — a team driven by passion and united by excellence.">
     <link rel="stylesheet" href="team.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
+    <!-- ===== NAVIGATION ===== -->
     <header id="site-header">
         <nav id="navbar">
             <a href="../index.html" class="brand-link">
@@ -23,212 +27,401 @@
                 <li class="nav-link"><a href="../index.html">Home</a></li>
                 <li class="nav-link"><a href="../model.html">Models</a></li>
                 <li class="nav-link"><a href="../technology.html">Technology</a></li>
-                <li class="nav-link"><a href="../A Menezza/menezza.html">The Menezza</a></li>
-                <li class="nav-link"><a href="../Services/servicos.html">Services</a></li>
-                <li class="nav-link"><a href="team.html">Team</a></li>
-                <li class="nav-link"><a href="../Contact/contact.html">Contact</a></li>
+                <li class="nav-link"><a href="../a menezza/menezza.html">The Menezza</a></li>
+                <li class="nav-link"><a href="../services/servicos.html">Services</a></li>
+                <li class="nav-link"><a href="team.html" class="active-link">Team</a></li>
+                <li class="nav-link"><a href="../contact/contact.html">Contact</a></li>
             </ul>
 
             <div class="nav-actions">
                 <a href="../Signup/cadastro.html" class="nav-button">Create account</a>
                 <button class="hamburger" aria-label="Menu">
-                    <i class="fas fa-bars"></i>
+                    <span></span><span></span><span></span>
                 </button>
             </div>
         </nav>
 
+        <!-- ===== HERO SECTION ===== -->
         <section id="hero" class="hero-section">
+            <div class="hero-particles" id="particles"></div>
             <div class="hero-content">
-                <span class="hero-subtitle">The People Behind Excellence</span>
-                <h1>MEET OUR <br> <span class="highlight">TEAM</span></h1>
-                <p>Driven by passion, united by excellence. Our team of automotive experts brings decades of
-                    combined experience to deliver unparalleled quality and innovation.</p>
+                <span class="hero-eyebrow" data-aos="fade-down">The People Behind Excellence</span>
+                <h1 data-aos="fade-up">MEET OUR <br><span class="highlight">TEAM</span></h1>
+                <p data-aos="fade-up" data-aos-delay="200">Driven by passion, united by excellence. Our team of
+                    automotive
+                    experts brings decades of combined experience to deliver unparalleled quality and innovation.</p>
+                <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#team-grid" class="btn-primary">Meet The Team</a>
+                    <a href="#join" class="btn-ghost">Join Our Team</a>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <div class="scroll-line"></div>
+                <span>Scroll</span>
             </div>
         </section>
     </header>
 
     <main>
-        <!-- Team Grid Section -->
+
+        <!-- ===== STATS SECTION ===== -->
+        <section id="stats" class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item" data-target="120">
+                        <div class="stat-number">
+                            <span class="counter">0</span><span class="stat-suffix">+</span>
+                        </div>
+                        <p class="stat-label">Team Members</p>
+                    </div>
+                    <div class="stat-item" data-target="25">
+                        <div class="stat-number">
+                            <span class="counter">0</span><span class="stat-suffix"> anos</span>
+                        </div>
+                        <p class="stat-label">Years of Excellence</p>
+                    </div>
+                    <div class="stat-item" data-target="18">
+                        <div class="stat-number">
+                            <span class="counter">0</span><span class="stat-suffix"></span>
+                        </div>
+                        <p class="stat-label">Countries Represented</p>
+                    </div>
+                    <div class="stat-item" data-target="47">
+                        <div class="stat-number">
+                            <span class="counter">0</span><span class="stat-suffix"></span>
+                        </div>
+                        <p class="stat-label">Awards Won</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TEAM GRID SECTION ===== -->
         <section id="team-grid" class="team-section">
             <div class="container">
-                <div class="section-intro">
-                    <h2>Leadership & Expertise</h2>
+                <div class="section-intro reveal">
+                    <span class="section-tag">Our People</span>
+                    <h2>Leadership &amp; Expertise</h2>
                     <p>Meet the visionaries and specialists who make Menezza Automobili a leader in automotive
                         excellence.</p>
                 </div>
 
+                <!-- Department Filter -->
+                <div class="filter-tabs reveal">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="leadership">Leadership</button>
+                    <button class="filter-btn" data-filter="engineering">Engineering</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="commercial">Commercial</button>
+                </div>
+
                 <div class="team-grid">
-                    <!-- Team Member 1 - CEO -->
-                    <div class="team-card">
-                        <div class="card-image">
-                            <img src="images/ceo.png" alt="Alessandro Menezza">
-                            <div class="card-overlay">
-                                <div class="social-links">
-                                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+
+                    <!-- CEO -->
+                    <div class="team-card" data-department="leadership">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="card-image">
+                                    <img src="images/ceo.png" alt="Alessandro Menezza">
+                                    <div class="card-badge">CEO</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Alessandro Menezza</h3>
+                                    <p class="role"><i class="fas fa-crown"></i> Chief Executive Officer</p>
+                                    <p class="description">With over 25 years in the automotive industry, Alessandro
+                                        founded Menezza with a vision to redefine luxury and performance.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <h3>Alessandro Menezza</h3>
-                            <p class="role">Chief Executive Officer</p>
-                            <p class="description">With over 25 years in the automotive industry, Alessandro
-                                founded Menezza with a vision to redefine luxury and performance.</p>
+                            <div class="card-back">
+                                <div class="card-back-content">
+                                    <div class="member-avatar">AM</div>
+                                    <h3>Alessandro Menezza</h3>
+                                    <p class="role-back">Chief Executive Officer</p>
+                                    <p class="bio">Forging the future of Italian luxury automobiles, one visionary step
+                                        at a time. 25+ years shaping the industry.</p>
+                                    <div class="expertise-tags">
+                                        <span>Strategy</span><span>Innovation</span><span>Leadership</span>
+                                    </div>
+                                    <div class="social-links">
+                                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Team Member 2 - Chief Engineer -->
-                    <div class="team-card">
-                        <div class="card-image">
-                            <img src="images/engineer.png" alt="Dr. Sofia Rossi">
-                            <div class="card-overlay">
-                                <div class="social-links">
-                                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <!-- Chief Engineer -->
+                    <div class="team-card" data-department="engineering">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="card-image">
+                                    <img src="images/engineer.png" alt="Dr. Sofia Rossi">
+                                    <div class="card-badge">Engineering</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Dr. Sofia Rossi</h3>
+                                    <p class="role"><i class="fas fa-cogs"></i> Chief Engineer</p>
+                                    <p class="description">Leading our engineering team with innovative solutions,
+                                        Sofia brings cutting-edge technology to every Menezza vehicle.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <h3>Dr. Sofia Rossi</h3>
-                            <p class="role">Chief Engineer</p>
-                            <p class="description">Leading our engineering team with innovative solutions,
-                                Sofia brings cutting-edge technology to every Menezza vehicle.</p>
+                            <div class="card-back">
+                                <div class="card-back-content">
+                                    <div class="member-avatar">SR</div>
+                                    <h3>Dr. Sofia Rossi</h3>
+                                    <p class="role-back">Chief Engineer</p>
+                                    <p class="bio">PhD in Mechanical Engineering from Politecnico di Milano. Pioneering
+                                        hybrid propulsion systems.</p>
+                                    <div class="expertise-tags">
+                                        <span>Propulsion</span><span>R&amp;D</span><span>Hybrid Tech</span>
+                                    </div>
+                                    <div class="social-links">
+                                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Team Member 3 - Head of Design -->
-                    <div class="team-card">
-                        <div class="card-image">
-                            <img src="images/designer.png" alt="Isabella Costa">
-                            <div class="card-overlay">
-                                <div class="social-links">
-                                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <!-- Head of Design -->
+                    <div class="team-card" data-department="design">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="card-image">
+                                    <img src="images/designer.png" alt="Isabella Costa">
+                                    <div class="card-badge">Design</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Isabella Costa</h3>
+                                    <p class="role"><i class="fas fa-paint-brush"></i> Head of Design</p>
+                                    <p class="description">Isabella's artistic vision transforms concepts into
+                                        breathtaking automotive masterpieces that define modern elegance.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <h3>Isabella Costa</h3>
-                            <p class="role">Head of Design</p>
-                            <p class="description">Isabella's artistic vision transforms concepts into
-                                breathtaking automotive masterpieces that define modern elegance.</p>
+                            <div class="card-back">
+                                <div class="card-back-content">
+                                    <div class="member-avatar">IC</div>
+                                    <h3>Isabella Costa</h3>
+                                    <p class="role-back">Head of Design</p>
+                                    <p class="bio">Former designer at Pininfarina and Bertone. Recipient of the Red Dot
+                                        Design Award 2022.</p>
+                                    <div class="expertise-tags">
+                                        <span>Aesthetics</span><span>Interiors</span><span>UX</span>
+                                    </div>
+                                    <div class="social-links">
+                                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Team Member 4 - Sales Director -->
-                    <div class="team-card">
-                        <div class="card-image">
-                            <img src="images/sales.png" alt="Marco Silva">
-                            <div class="card-overlay">
-                                <div class="social-links">
-                                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <!-- Sales Director -->
+                    <div class="team-card" data-department="commercial">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="card-image">
+                                    <img src="images/sales.png" alt="Marco Silva">
+                                    <div class="card-badge">Commercial</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Marco Silva</h3>
+                                    <p class="role"><i class="fas fa-chart-line"></i> Sales Director</p>
+                                    <p class="description">Marco ensures every client receives personalized service and
+                                        finds their perfect Menezza vehicle match.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <h3>Marco Silva</h3>
-                            <p class="role">Sales Director</p>
-                            <p class="description">Marco ensures every client receives personalized service and
-                                finds their perfect Menezza vehicle match.</p>
+                            <div class="card-back">
+                                <div class="card-back-content">
+                                    <div class="member-avatar">MS</div>
+                                    <h3>Marco Silva</h3>
+                                    <p class="role-back">Sales Director</p>
+                                    <p class="bio">18 years in luxury automotive sales across Europe and Latin America.
+                                        Expert in curated client experiences.</p>
+                                    <div class="expertise-tags">
+                                        <span>Sales</span><span>CRM</span><span>Luxury Market</span>
+                                    </div>
+                                    <div class="social-links">
+                                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Team Member 5 - Customer Experience Manager -->
-                    <div class="team-card">
-                        <div class="card-image">
-                            <img src="images/customer.png" alt="Lucia Ferreira">
-                            <div class="card-overlay">
-                                <div class="social-links">
-                                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <!-- Customer Experience -->
+                    <div class="team-card" data-department="commercial">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="card-image">
+                                    <img src="images/customer.png" alt="Lucia Ferreira">
+                                    <div class="card-badge">Commercial</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Lucia Ferreira</h3>
+                                    <p class="role"><i class="fas fa-star"></i> Customer Experience Manager</p>
+                                    <p class="description">Dedicated to creating exceptional experiences, Lucia ensures
+                                        every interaction with Menezza exceeds expectations.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card-content">
-                            <h3>Lucia Ferreira</h3>
-                            <p class="role">Customer Experience Manager</p>
-                            <p class="description">Dedicated to creating exceptional experiences, Lucia ensures
-                                every interaction with Menezza exceeds expectations.</p>
+                            <div class="card-back">
+                                <div class="card-back-content">
+                                    <div class="member-avatar">LF</div>
+                                    <h3>Lucia Ferreira</h3>
+                                    <p class="role-back">Customer Experience Manager</p>
+                                    <p class="bio">Expert in luxury hospitality, formerly with Ritz-Carlton. Redefining
+                                        what automotive service means.</p>
+                                    <div class="expertise-tags">
+                                        <span>CX</span><span>Hospitality</span><span>Brand</span>
+                                    </div>
+                                    <div class="social-links">
+                                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Team Member 6 - Technical Lead -->
-                    <div class="team-card">
-                        <div class="card-image">
-                            <img src="images/technical.png" alt="Elena Martinez">
-                            <div class="card-overlay">
-                                <div class="social-links">
-                                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <!-- Technical Lead -->
+                    <div class="team-card" data-department="engineering">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="card-image">
+                                    <img src="images/technical.png" alt="Elena Martinez">
+                                    <div class="card-badge">Engineering</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3>Elena Martinez</h3>
+                                    <p class="role"><i class="fas fa-microchip"></i> Technical Lead</p>
+                                    <p class="description">Elena's technical expertise ensures every Menezza vehicle
+                                        performs flawlessly with precision maintenance and care.</p>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="card-back-content">
+                                    <div class="member-avatar">EM</div>
+                                    <h3>Elena Martinez</h3>
+                                    <p class="role-back">Technical Lead</p>
+                                    <p class="bio">Specializes in electric powertrains and advanced diagnostics. MIT
+                                        graduate with 12 patents in automotive tech.</p>
+                                    <div class="expertise-tags">
+                                        <span>EV</span><span>Diagnostics</span><span>Software</span>
+                                    </div>
+                                    <div class="social-links">
+                                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-content">
-                            <h3>Elena Martinez</h3>
-                            <p class="role">Technical Lead</p>
-                            <p class="description">Elena's technical expertise ensures every Menezza vehicle
-                                performs flawlessly with precision maintenance and care.</p>
-                        </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- Values Section -->
+        <!-- ===== VALUES SECTION ===== -->
         <section id="values" class="values-section">
+            <div class="values-bg-text">MENEZZA</div>
             <div class="container">
-                <div class="section-intro">
-                    <h2>Our Core Values</h2>
-                    <p>The principles that drive our team and define our culture.</p>
+                <div class="section-intro reveal">
+                    <span class="section-tag light">Our DNA</span>
+                    <h2>Core Values</h2>
+                    <p>The principles that drive our team and define our culture of excellence.</p>
                 </div>
 
                 <div class="values-grid">
-                    <div class="value-card">
+                    <div class="value-card reveal">
+                        <div class="value-number">01</div>
                         <div class="icon-box">
                             <i class="fas fa-trophy"></i>
                         </div>
                         <h3>Excellence</h3>
-                        <p>We pursue perfection in every detail, from design to delivery, ensuring unmatched
-                            quality.</p>
+                        <p>We pursue perfection in every detail, from design to delivery, ensuring unmatched quality in
+                            all we create.</p>
+                        <div class="value-line"></div>
                     </div>
 
-                    <div class="value-card">
+                    <div class="value-card reveal">
+                        <div class="value-number">02</div>
                         <div class="icon-box">
                             <i class="fas fa-lightbulb"></i>
                         </div>
                         <h3>Innovation</h3>
-                        <p>Constantly pushing boundaries with cutting-edge technology and forward-thinking
+                        <p>Constantly pushing boundaries with cutting-edge technology and forward-thinking engineering
                             solutions.</p>
+                        <div class="value-line"></div>
                     </div>
 
-                    <div class="value-card">
+                    <div class="value-card reveal">
+                        <div class="value-number">03</div>
                         <div class="icon-box">
-                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-fire"></i>
                         </div>
                         <h3>Passion</h3>
-                        <p>Our love for automobiles drives everything we do, creating vehicles that inspire.</p>
+                        <p>Our love for automobiles drives everything we do, creating vehicles that don't just move —
+                            they inspire.</p>
+                        <div class="value-line"></div>
                     </div>
 
-                    <div class="value-card">
+                    <div class="value-card reveal">
+                        <div class="value-number">04</div>
                         <div class="icon-box">
                             <i class="fas fa-handshake"></i>
                         </div>
                         <h3>Integrity</h3>
-                        <p>Building trust through transparency, honesty, and unwavering commitment to our
-                            clients.</p>
+                        <p>Building trust through transparency, honesty, and unwavering commitment to our clients and
+                            partners.</p>
+                        <div class="value-line"></div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- ===== JOIN US SECTION ===== -->
+        <section id="join" class="join-section">
+            <div class="container">
+                <div class="join-card reveal">
+                    <div class="join-text">
+                        <span class="section-tag">Careers</span>
+                        <h2>Join Our Team</h2>
+                        <p>We are always looking for exceptional talent who share our passion for automotive excellence.
+                            If you are driven, creative, and want to build something legendary — we want to hear from
+                            you.</p>
+                        <ul class="perks-list">
+                            <li><i class="fas fa-check-circle"></i> Competitive salary &amp; benefits</li>
+                            <li><i class="fas fa-check-circle"></i> International career growth</li>
+                            <li><i class="fas fa-check-circle"></i> Work alongside industry leaders</li>
+                            <li><i class="fas fa-check-circle"></i> Cutting-edge facilities</li>
+                        </ul>
+                    </div>
+                    <div class="join-action">
+                        <div class="join-badge">
+                            <div class="badge-ring"></div>
+                            <div class="badge-ring ring2"></div>
+                            <span class="badge-text">We're<br>Hiring</span>
+                        </div>
+                        <a href="../contact/contact.html" class="btn-gold">Apply Now <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-col brand-col">
@@ -238,10 +431,10 @@
                     More than vehicles, we create symbols in motion, with elegance and precision.
                 </p>
                 <div class="footer-social">
-                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
             <div class="footer-col">

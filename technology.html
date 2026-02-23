@@ -5,436 +5,457 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technology - Menezza Automobili</title>
-    <link rel="stylesheet" href="index.css">
+    <meta name="description"
+        content="Discover the cutting-edge technology powering every Menezza vehicle — from AI-driven intelligence to advanced hybrid powertrains and semi-autonomous driving.">
     <link rel="stylesheet" href="technology.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-    <header id="site-header">
-        <nav id="navbar">
-            <a href="index.html" class="brand-link">
-                <img src="images/brand.png" alt="Menezza Automobili" class="brand">
-            </a>
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar">
+        <a href="index.html" class="brand-link">
+            <img src="images/brand.png" alt="Menezza Automobili" class="brand">
+        </a>
 
-            <ul class="nav-links">
-                <li class="nav-link"><a href="index.html">Home</a></li>
-                <li class="nav-link"><a href="model.html">Models</a></li>
-                <li class="nav-link"><a href="technology.html">Technology</a></li>
-                <li class="nav-link"><a href="A Menezza/menezza.html">The Menezza</a></li>
-                <li class="nav-link"><a href="Services/servicos.html">Services</a></li>
-                <li class="nav-link"><a href="Contact/contact.html">Contact</a></li>
-            </ul>
+        <ul class="nav-links">
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="model.html">Models</a></li>
+            <li class="nav-link"><a href="technology.html" class="active-link">Technology</a></li>
+            <li class="nav-link"><a href="a menezza/menezza.html">The Menezza</a></li>
+            <li class="nav-link"><a href="services/servicos.html">Services</a></li>
+            <li class="nav-link"><a href="Team/team.html">Team</a></li>
+            <li class="nav-link"><a href="contact/contact.html">Contact</a></li>
+        </ul>
 
-            <div class="nav-actions">
-                <a href="Signup/cadastro.html" class="nav-button">Create account</a>
-                <button class="hamburger" aria-label="Menu">
-                    <i class="fas fa-bars"></i>
-                </button>
+        <div class="nav-actions">
+            <a href="Signup/cadastro.html" class="nav-button">Create account</a>
+            <button class="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <header id="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <span class="hero-eyebrow">Innovation Redefined</span>
+            <h1>CUTTING-EDGE<br><span class="highlight">TECHNOLOGY</span></h1>
+            <p>Experience the future of automotive engineering. Where innovation meets performance, and technology
+                transforms every journey into something extraordinary.</p>
+            <div class="hero-cta">
+                <a href="#core-tech" class="btn-primary">Explore Innovation</a>
+                <a href="contact/contact.html" class="btn-ghost">Schedule a Demo <i class="fas fa-arrow-right"></i></a>
             </div>
-        </nav>
-
-        <section id="tech-hero" class="tech-hero-section">
-            <div class="tech-hero-content">
-                <span class="tech-subtitle">INNOVATION REDEFINED</span>
-                <h1>CUTTING-EDGE <br><span class="highlight">TECHNOLOGY</span></h1>
-                <p>Experience the future of automotive engineering. Where innovation meets performance, and technology
-                    enhances every journey.</p>
-                <div class="tech-hero-actions">
-                    <button class="hero-button btn-primary-glow">Explore Innovation</button>
-                    <button class="hero-button btn-outline-light">Watch Demo</button>
-                </div>
-            </div>
-        </section>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
     </header>
 
     <main>
-        <!-- Technology Overview Section -->
-        <section id="tech-overview" class="content-section">
+
+        <!-- ===== PERFORMANCE STATS ===== -->
+        <section class="perf-stats-section">
             <div class="container">
-                <div class="section-title-center">
-                    <i class="fas fa-microchip highlight-icon-gold"></i>
-                    <h2>TECHNOLOGY THAT DRIVES THE FUTURE</h2>
-                    <div class="title-underline-gold"></div>
-                    <p class="section-description">At Menezza, we don't just follow trends—we create them. Our
-                        commitment to innovation ensures that every vehicle is equipped with the most advanced
-                        technology available.</p>
+                <div class="perf-stats-grid">
+                    <div class="perf-stat reveal">
+                        <div class="perf-stat-number" data-target="650" data-suffix=" HP">
+                            <span class="counter">0</span><span class="suf"> HP</span>
+                        </div>
+                        <p class="perf-stat-label">Peak Horsepower</p>
+                    </div>
+                    <div class="perf-stat reveal">
+                        <div class="perf-stat-number" data-target="850" data-suffix=" Nm">
+                            <span class="counter">0</span><span class="suf"> Nm</span>
+                        </div>
+                        <p class="perf-stat-label">Maximum Torque</p>
+                    </div>
+                    <div class="perf-stat reveal">
+                        <div class="perf-stat-number" data-decimal="true" data-target-dec="3.2" data-suffix="s">
+                            <span class="counter-dec">3.2</span><span class="suf">s</span>
+                        </div>
+                        <p class="perf-stat-label">0–100 km/h</p>
+                    </div>
+                    <div class="perf-stat reveal">
+                        <div class="perf-stat-number" data-target="320" data-suffix=" km/h">
+                            <span class="counter">0</span><span class="suf"> km/h</span>
+                        </div>
+                        <p class="perf-stat-label">Top Speed</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Core Technologies Section -->
-        <section id="core-tech" class="content-section dark-theme">
+        <!-- ===== CORE TECHNOLOGIES ===== -->
+        <section id="core-tech" class="core-section">
+            <div class="section-bg-text">TECH</div>
             <div class="container">
-                <div class="section-title-center">
-                    <i class="fas fa-cogs highlight-icon-large"></i>
-                    <h2>CORE TECHNOLOGIES</h2>
-                    <div class="title-underline"></div>
+                <div class="section-intro reveal">
+                    <span class="section-tag">Core Systems</span>
+                    <h2>Core Technologies</h2>
+                    <p>At Menezza, we don't just follow trends — we create them. Every vehicle is equipped with the most
+                        advanced technology available.</p>
                 </div>
 
                 <div class="tech-grid">
-                    <div class="tech-card reveal-delay-1">
-                        <div class="tech-card-header">
+
+                    <div class="tech-card reveal">
+                        <div class="tech-card-top">
                             <div class="tech-icon">
                                 <i class="fas fa-brain"></i>
                             </div>
-                            <h3>AI-Powered Intelligence</h3>
+                            <span class="tech-tag">AI</span>
                         </div>
-                        <div class="tech-card-body">
-                            <p>Advanced artificial intelligence learns your driving habits and preferences, optimizing
-                                performance, comfort, and efficiency in real-time.</p>
-                            <ul class="tech-features">
-                                <li><i class="fas fa-check"></i> Predictive maintenance alerts</li>
-                                <li><i class="fas fa-check"></i> Adaptive driving modes</li>
-                                <li><i class="fas fa-check"></i> Voice-activated controls</li>
-                                <li><i class="fas fa-check"></i> Personalized settings memory</li>
-                            </ul>
-                        </div>
+                        <h3>AI-Powered Intelligence</h3>
+                        <p>Advanced artificial intelligence that learns your habits, optimizing performance, comfort,
+                            and efficiency in real-time — personalized to you.</p>
+                        <ul class="tech-features">
+                            <li><i class="fas fa-check"></i> Predictive maintenance alerts</li>
+                            <li><i class="fas fa-check"></i> Adaptive driving modes</li>
+                            <li><i class="fas fa-check"></i> Voice-activated controls</li>
+                            <li><i class="fas fa-check"></i> Personalized settings memory</li>
+                        </ul>
+                        <div class="tech-card-line"></div>
                     </div>
 
-                    <div class="tech-card reveal-delay-2">
-                        <div class="tech-card-header">
+                    <div class="tech-card reveal">
+                        <div class="tech-card-top">
                             <div class="tech-icon">
                                 <i class="fas fa-shield-alt"></i>
                             </div>
-                            <h3>Advanced Safety Systems</h3>
+                            <span class="tech-tag">Safety</span>
                         </div>
-                        <div class="tech-card-body">
-                            <p>Comprehensive safety suite with cutting-edge sensors and cameras that protect you and
-                                your passengers at all times.</p>
-                            <ul class="tech-features">
-                                <li><i class="fas fa-check"></i> 360° surround view cameras</li>
-                                <li><i class="fas fa-check"></i> Automatic emergency braking</li>
-                                <li><i class="fas fa-check"></i> Blind spot monitoring</li>
-                                <li><i class="fas fa-check"></i> Lane keeping assist</li>
-                            </ul>
-                        </div>
+                        <h3>Advanced Safety Systems</h3>
+                        <p>Comprehensive safety suite with cutting-edge sensors, cameras, and radars that protect you
+                            and your passengers at every moment.</p>
+                        <ul class="tech-features">
+                            <li><i class="fas fa-check"></i> 360° surround view cameras</li>
+                            <li><i class="fas fa-check"></i> Automatic emergency braking</li>
+                            <li><i class="fas fa-check"></i> Blind spot monitoring</li>
+                            <li><i class="fas fa-check"></i> Lane keeping assist</li>
+                        </ul>
+                        <div class="tech-card-line"></div>
                     </div>
 
-                    <div class="tech-card reveal-delay-3">
-                        <div class="tech-card-header">
+                    <div class="tech-card reveal">
+                        <div class="tech-card-top">
                             <div class="tech-icon">
                                 <i class="fas fa-bolt"></i>
                             </div>
-                            <h3>Hybrid Powertrain</h3>
+                            <span class="tech-tag">Powertrain</span>
                         </div>
-                        <div class="tech-card-body">
-                            <p>Revolutionary hybrid technology combines electric efficiency with combustion power for
-                                optimal performance and reduced emissions.</p>
-                            <ul class="tech-features">
-                                <li><i class="fas fa-check"></i> Regenerative braking system</li>
-                                <li><i class="fas fa-check"></i> Instant torque delivery</li>
-                                <li><i class="fas fa-check"></i> Multiple drive modes</li>
-                                <li><i class="fas fa-check"></i> Extended range capability</li>
-                            </ul>
-                        </div>
+                        <h3>Hybrid Powertrain</h3>
+                        <p>Revolutionary hybrid technology combining electric efficiency with combustion power —
+                            delivering optimal performance with reduced emissions.</p>
+                        <ul class="tech-features">
+                            <li><i class="fas fa-check"></i> Regenerative braking system</li>
+                            <li><i class="fas fa-check"></i> Instant torque delivery</li>
+                            <li><i class="fas fa-check"></i> Multiple drive modes</li>
+                            <li><i class="fas fa-check"></i> Extended range capability</li>
+                        </ul>
+                        <div class="tech-card-line"></div>
                     </div>
 
-                    <div class="tech-card reveal-delay-4">
-                        <div class="tech-card-header">
+                    <div class="tech-card reveal">
+                        <div class="tech-card-top">
                             <div class="tech-icon">
                                 <i class="fas fa-wifi"></i>
                             </div>
-                            <h3>Connected Ecosystem</h3>
+                            <span class="tech-tag">Connectivity</span>
                         </div>
-                        <div class="tech-card-body">
-                            <p>Stay connected wherever you go with our integrated connectivity platform that seamlessly
-                                links your digital life to your vehicle.</p>
-                            <ul class="tech-features">
-                                <li><i class="fas fa-check"></i> Remote vehicle control</li>
-                                <li><i class="fas fa-check"></i> Real-time traffic updates</li>
-                                <li><i class="fas fa-check"></i> Over-the-air updates</li>
-                                <li><i class="fas fa-check"></i> Smartphone integration</li>
-                            </ul>
-                        </div>
+                        <h3>Connected Ecosystem</h3>
+                        <p>Stay connected everywhere with our integrated platform that seamlessly links your digital
+                            world to every aspect of your vehicle.</p>
+                        <ul class="tech-features">
+                            <li><i class="fas fa-check"></i> Remote vehicle control</li>
+                            <li><i class="fas fa-check"></i> Real-time traffic updates</li>
+                            <li><i class="fas fa-check"></i> Over-the-air updates</li>
+                            <li><i class="fas fa-check"></i> Smartphone integration</li>
+                        </ul>
+                        <div class="tech-card-line"></div>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- Infotainment Section -->
-        <section id="infotainment" class="content-section">
+        <!-- ===== INFOTAINMENT ===== -->
+        <section id="infotainment" class="infotainment-section">
             <div class="container">
-                <div class="infotainment-layout">
-                    <div class="infotainment-content">
-                        <div class="section-header">
-                            <i class="fas fa-desktop highlight-icon-gold"></i>
-                            <h2>Next-Gen Infotainment</h2>
-                        </div>
-                        <p>Immerse yourself in a digital cockpit designed for the modern driver. Our infotainment system
-                            combines intuitive controls with stunning visuals.</p>
+                <div class="infotainment-grid">
+                    <div class="infotainment-text reveal">
+                        <span class="section-tag">Digital Cockpit</span>
+                        <h2>Next-Gen<br>Infotainment</h2>
+                        <p>Immerse yourself in a digital cockpit designed for the modern driver — intuitive controls,
+                            stunning visuals, and seamless connectivity all in one.</p>
 
-                        <div class="infotainment-features">
-                            <div class="info-feature">
-                                <div class="info-icon">
-                                    <i class="fas fa-tv"></i>
-                                </div>
-                                <div class="info-text">
+                        <div class="info-features">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-tv"></i></div>
+                                <div>
                                     <h4>15" Touchscreen Display</h4>
                                     <p>Crystal-clear 4K resolution with haptic feedback</p>
                                 </div>
                             </div>
-
-                            <div class="info-feature">
-                                <div class="info-icon">
-                                    <i class="fas fa-gauge-high"></i>
-                                </div>
-                                <div class="info-text">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-gauge-high"></i></div>
+                                <div>
                                     <h4>Digital Instrument Cluster</h4>
-                                    <p>12.3" customizable driver display</p>
+                                    <p>12.3" fully customizable driver display</p>
                                 </div>
                             </div>
-
-                            <div class="info-feature">
-                                <div class="info-icon">
-                                    <i class="fas fa-volume-high"></i>
-                                </div>
-                                <div class="info-text">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-volume-high"></i></div>
+                                <div>
                                     <h4>Premium Audio System</h4>
                                     <p>16-speaker surround sound experience</p>
                                 </div>
                             </div>
-
-                            <div class="info-feature">
-                                <div class="info-icon">
-                                    <i class="fas fa-mobile-screen"></i>
-                                </div>
-                                <div class="info-text">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-mobile-screen"></i></div>
+                                <div>
                                     <h4>Wireless Integration</h4>
-                                    <p>Apple CarPlay & Android Auto support</p>
+                                    <p>Apple CarPlay &amp; Android Auto support</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="infotainment-visual">
-                        <div class="visual-placeholder">
-                            <i class="fas fa-display"></i>
-                            <p>Infotainment System</p>
+                    <div class="infotainment-visual reveal">
+                        <div class="cockpit-card">
+                            <div class="cockpit-screen">
+                                <div class="screen-header">
+                                    <span class="screen-dot"></span>
+                                    <span class="screen-dot active"></span>
+                                    <span class="screen-dot"></span>
+                                </div>
+                                <i class="fas fa-display"></i>
+                                <p>Menezza OS 4.0</p>
+                            </div>
+                            <div class="cockpit-gauges">
+                                <div class="gauge-item">
+                                    <div class="gauge-ring"><span>320</span></div>
+                                    <small>km/h</small>
+                                </div>
+                                <div class="gauge-center">
+                                    <i class="fas fa-circle-play"></i>
+                                </div>
+                                <div class="gauge-item">
+                                    <div class="gauge-ring"><span>8500</span></div>
+                                    <small>RPM</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Autonomous Features Section -->
-        <section id="autonomous" class="content-section dark-theme">
+        <!-- ===== AUTONOMOUS DRIVING ===== -->
+        <section id="autonomous" class="autonomous-section">
+            <div class="section-bg-text">DRIVE</div>
             <div class="container">
-                <div class="section-title-center">
-                    <i class="fas fa-robot highlight-icon-large"></i>
-                    <h2>SEMI-AUTONOMOUS DRIVING</h2>
-                    <div class="title-underline"></div>
-                    <p class="section-description light-text">Experience the future of driving with our advanced driver
-                        assistance systems that make every journey safer and more relaxing.</p>
+                <div class="section-intro reveal">
+                    <span class="section-tag">ADAS Suite</span>
+                    <h2>Semi-Autonomous Driving</h2>
+                    <p>Experience the future of driving with our Level 2+ driver assistance systems — making every
+                        journey safer, smarter, and more relaxing.</p>
                 </div>
 
                 <div class="autonomous-grid">
-                    <div class="autonomous-feature">
-                        <div class="autonomous-icon">
-                            <i class="fas fa-road"></i>
-                        </div>
+                    <div class="auto-card reveal">
+                        <div class="auto-icon"><i class="fas fa-road"></i></div>
                         <h3>Adaptive Cruise Control</h3>
-                        <p>Maintains safe distance from vehicles ahead, automatically adjusting speed in traffic.</p>
+                        <p>Maintains safe distance from vehicles ahead, automatically adjusting speed to traffic flow.
+                        </p>
                     </div>
-
-                    <div class="autonomous-feature">
-                        <div class="autonomous-icon">
-                            <i class="fas fa-steering-wheel"></i>
-                        </div>
+                    <div class="auto-card reveal">
+                        <div class="auto-icon"><i class="fas fa-steering-wheel"></i></div>
                         <h3>Lane Centering</h3>
-                        <p>Keeps your vehicle centered in the lane with gentle steering corrections.</p>
+                        <p>Keeps your vehicle precisely centered in the lane with smooth, gentle steering corrections.
+                        </p>
                     </div>
-
-                    <div class="autonomous-feature">
-                        <div class="autonomous-icon">
-                            <i class="fas fa-car-side"></i>
-                        </div>
+                    <div class="auto-card reveal">
+                        <div class="auto-icon"><i class="fas fa-car-side"></i></div>
                         <h3>Auto Park Assist</h3>
-                        <p>Automatically parks your vehicle in parallel or perpendicular spaces.</p>
+                        <p>Automatically navigates into parallel or perpendicular spaces with zero driver input.</p>
                     </div>
-
-                    <div class="autonomous-feature">
-                        <div class="autonomous-icon">
-                            <i class="fas fa-traffic-light"></i>
-                        </div>
+                    <div class="auto-card reveal">
+                        <div class="auto-icon"><i class="fas fa-traffic-light"></i></div>
                         <h3>Traffic Sign Recognition</h3>
-                        <p>Identifies and displays speed limits and road signs on your dashboard.</p>
+                        <p>Identifies speed limits, road signs, and hazards and displays them instantly on your
+                            dashboard.</p>
                     </div>
-
-                    <div class="autonomous-feature">
-                        <div class="autonomous-icon">
-                            <i class="fas fa-eye"></i>
-                        </div>
+                    <div class="auto-card reveal">
+                        <div class="auto-icon"><i class="fas fa-eye"></i></div>
                         <h3>Driver Attention Monitor</h3>
-                        <p>Detects driver fatigue and alerts you to take a break when needed.</p>
+                        <p>Detects fatigue and distraction, alerting you to rest before it becomes a safety risk.</p>
                     </div>
-
-                    <div class="autonomous-feature">
-                        <div class="autonomous-icon">
-                            <i class="fas fa-route"></i>
-                        </div>
+                    <div class="auto-card reveal">
+                        <div class="auto-icon"><i class="fas fa-route"></i></div>
                         <h3>Highway Pilot</h3>
-                        <p>Handles steering, acceleration, and braking on highways for relaxed cruising.</p>
+                        <p>Handles steering, acceleration, and braking on highways — delivered for truly relaxed
+                            cruising.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Performance Tech Section -->
-        <section id="performance-tech" class="content-section">
+        <!-- ===== PERFORMANCE ENGINEERING ===== -->
+        <section id="performance-tech" class="performance-section">
             <div class="container">
-                <div class="performance-layout reverse">
-                    <div class="performance-visual">
-                        <div class="visual-placeholder">
-                            <i class="fas fa-engine"></i>
-                            <p>Performance Engine</p>
-                        </div>
-                    </div>
-
-                    <div class="performance-content">
-                        <div class="section-header">
-                            <i class="fas fa-rocket highlight-icon-gold"></i>
-                            <h2>Performance Engineering</h2>
-                        </div>
-                        <p>Every component is engineered for maximum performance. From the engine to the suspension,
-                            technology enhances every aspect of your drive.</p>
-
-                        <div class="performance-stats">
-                            <div class="stat-item">
-                                <div class="stat-number">650</div>
-                                <div class="stat-label">Horsepower</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">850</div>
-                                <div class="stat-label">Nm Torque</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">3.2</div>
-                                <div class="stat-label">0-100 km/h (s)</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">320</div>
-                                <div class="stat-label">Top Speed (km/h)</div>
-                            </div>
-                        </div>
-
-                        <div class="performance-features">
-                            <div class="perf-feature">
-                                <i class="fas fa-cog"></i>
+                <div class="performance-grid">
+                    <div class="performance-text reveal">
+                        <span class="section-tag">Engineering</span>
+                        <h2>Performance<br>Engineering</h2>
+                        <p>Every component is engineered for maximum performance. From the engine to the suspension —
+                            technology enhances every dimension of your drive.</p>
+                        <div class="perf-features">
+                            <div class="perf-feat reveal">
+                                <div class="perf-feat-icon"><i class="fas fa-cog"></i></div>
                                 <span>Active Suspension System</span>
                             </div>
-                            <div class="perf-feature">
-                                <i class="fas fa-wind"></i>
+                            <div class="perf-feat reveal">
+                                <div class="perf-feat-icon"><i class="fas fa-wind"></i></div>
                                 <span>Aerodynamic Optimization</span>
                             </div>
-                            <div class="perf-feature">
-                                <i class="fas fa-fire"></i>
+                            <div class="perf-feat reveal">
+                                <div class="perf-feat-icon"><i class="fas fa-fire"></i></div>
                                 <span>Sport Exhaust System</span>
                             </div>
-                            <div class="perf-feature">
-                                <i class="fas fa-circle-dot"></i>
+                            <div class="perf-feat reveal">
+                                <div class="perf-feat-icon"><i class="fas fa-circle-dot"></i></div>
                                 <span>Carbon Ceramic Brakes</span>
                             </div>
                         </div>
                     </div>
+                    <div class="performance-visual reveal">
+                        <div class="engine-card">
+                            <div class="engine-ring ring-outer"></div>
+                            <div class="engine-ring ring-middle"></div>
+                            <div class="engine-ring ring-inner"></div>
+                            <div class="engine-core">
+                                <i class="fas fa-rotate"></i>
+                            </div>
+                            <div class="engine-labels">
+                                <span class="label-item top">V8 Twin-Turbo</span>
+                                <span class="label-item right">650 HP</span>
+                                <span class="label-item bottom">850 Nm</span>
+                                <span class="label-item left">Hybrid</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Innovation Timeline Section -->
-        <section id="innovation-timeline" class="content-section dark-theme">
+        <!-- ===== INNOVATION TIMELINE ===== -->
+        <section id="timeline" class="timeline-section">
             <div class="container">
-                <div class="section-title-center">
-                    <i class="fas fa-timeline highlight-icon-large"></i>
-                    <h2>INNOVATION TIMELINE</h2>
-                    <div class="title-underline"></div>
+                <div class="section-intro reveal">
+                    <span class="section-tag">Our Journey</span>
+                    <h2>Innovation Timeline</h2>
+                    <p>Five years of relentless innovation — shaping the future of automotive technology, one
+                        breakthrough at a time.</p>
                 </div>
 
                 <div class="timeline">
-                    <div class="timeline-item left">
+                    <div class="timeline-item left reveal">
+                        <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <div class="timeline-year">2020</div>
                             <h3>AI Integration</h3>
-                            <p>First automotive AI assistant with natural language processing and predictive analytics.
-                            </p>
+                            <p>First automotive AI assistant with natural language processing and predictive analytics
+                                capable of learning individual driver profiles.</p>
                         </div>
                     </div>
-
-                    <div class="timeline-item right">
+                    <div class="timeline-item right reveal">
+                        <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <div class="timeline-year">2021</div>
                             <h3>Hybrid Revolution</h3>
-                            <p>Launch of our revolutionary hybrid powertrain with 40% improved efficiency.</p>
+                            <p>Launch of our revolutionary hybrid powertrain with 40% improved efficiency and instant
+                                torque delivery across all performance modes.</p>
                         </div>
                     </div>
-
-                    <div class="timeline-item left">
+                    <div class="timeline-item left reveal">
+                        <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <div class="timeline-year">2022</div>
                             <h3>Connected Ecosystem</h3>
-                            <p>Introduction of seamless vehicle-to-cloud connectivity and OTA updates.</p>
+                            <p>Introduction of seamless vehicle-to-cloud connectivity, enabling real-time OTA updates
+                                and remote diagnostics across the entire fleet.</p>
                         </div>
                     </div>
-
-                    <div class="timeline-item right">
+                    <div class="timeline-item right reveal">
+                        <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <div class="timeline-year">2023</div>
                             <h3>Advanced Safety Suite</h3>
-                            <p>Comprehensive safety system with Level 2+ autonomous capabilities.</p>
+                            <p>Comprehensive ADAS safety system achieving Level 2+ autonomous capabilities — the safest
+                                Menezza ever built.</p>
                         </div>
                     </div>
-
-                    <div class="timeline-item left">
+                    <div class="timeline-item left reveal">
+                        <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <div class="timeline-year">2024</div>
                             <h3>Next-Gen Infotainment</h3>
-                            <p>Revolutionary 15" 4K touchscreen with haptic feedback and AR navigation.</p>
+                            <p>Revolutionary 15" 4K touchscreen with haptic feedback, AR navigation, and our proprietary
+                                Menezza OS 4.0 platform.</p>
                         </div>
                     </div>
-
-                    <div class="timeline-item right">
+                    <div class="timeline-item right reveal">
+                        <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <div class="timeline-year">2025</div>
+                            <div class="timeline-year">2025+</div>
                             <h3>Future Vision</h3>
-                            <p>Development of fully autonomous driving and sustainable energy solutions.</p>
+                            <p>Development of fully autonomous driving and zero-emission sustainable energy solutions —
+                                the next chapter of Menezza technology.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CTA Section -->
+        <!-- ===== CTA SECTION ===== -->
         <section id="tech-cta" class="cta-section">
             <div class="cta-overlay">
-                <div class="cta-content">
-                    <h2>EXPERIENCE THE TECHNOLOGY</h2>
+                <div class="cta-content reveal">
+                    <span class="section-tag">Experience It</span>
+                    <h2>EXPERIENCE THE<br><span>TECHNOLOGY</span></h2>
                     <p>Visit our showroom and discover how our cutting-edge technology transforms every drive into an
                         extraordinary experience.</p>
-                    <div class="cta-actions">
-                        <button class="hero-button btn-primary-glow">Schedule a Demo</button>
-                        <button class="hero-button btn-outline-light">Contact Us</button>
+                    <div class="cta-buttons">
+                        <a href="contact/contact.html" class="btn-primary">Schedule a Demo</a>
+                        <a href="contact/contact.html" class="btn-ghost">Contact Us <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </section>
+
     </main>
 
-    <footer class="footer reveal">
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
         <div class="footer-container">
             <div class="footer-col brand-col">
                 <h2 class="footer-logo">MENEZZA</h2>
-                <p class="footer-desc">
-                    Menezza was born from bold ideas and dreamed paths.
-                    More than vehicles, we create symbols in motion, with elegance and precision.
-                </p>
+                <p class="footer-desc">Menezza was born from bold ideas and dreamed paths. More than vehicles, we create
+                    symbols in motion, with elegance and precision.</p>
                 <div class="footer-social">
-                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
             <div class="footer-col">
@@ -470,7 +491,7 @@
         </div>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="technology.js"></script>
 </body>
 
 </html>

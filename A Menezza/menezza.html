@@ -2,445 +2,388 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Menezza</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Menezza — Legacy & Vision</title>
+  <meta name="description"
+    content="Discover the story, mission, and values behind Menezza Automobili — where precision meets passion, and every vehicle is a symbol in motion.">
   <link rel="stylesheet" href="menezza.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- ========================= TOP BAR ========================= -->
-  <div class="top-bar">
-    <div class="container">
-      <a href="../index.html" class="logo-link">
-        <img src="../images/logo2.png" alt="Menezza" class="logo-img">
-      </a>
-      <div class="contact-info">
-        <div class="info-item">
-          <i class="fas fa-home"></i>
-          <div>
-            <small>ADDRESS</small>
-            <p>721 New York NY 10016</p>
-          </div>
-        </div>
-        <div class="info-item">
-          <i class="fas fa-phone"></i>
-          <div>
-            <small>CALL US</small>
-            <p>(+01) 123 456 7890</p>
-          </div>
-        </div>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-dribbble"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar">
+    <a href="../index.html" class="brand-link">
+      <img src="../images/brand.png" alt="Menezza Automobili" class="brand">
+    </a>
 
-  <!-- ========================= NAV SECTION ========================= -->
-  <nav class="main-nav">
-    <div class="container nav-container">
-      <ul class="nav-links">
-        <li><a href="../index.html">HOME</a></li>
-        <li><a href="menezza.html" class="active">THE MENEZZA</a></li>
-        <li><a href="/Team/team.html">TEAM</a></li>
-        <li><a href="../Services/servicos.html">SERVICES</a></li>
-        <li><a href="#">PROJECT</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="../Contact/contact.html">CONTACT</a></li>
-      </ul>
-      <div class="search-bar">
-        <input type="text" placeholder="Search">
-        <button><i class="fas fa-search"></i></button>
-      </div>
+    <ul class="nav-links">
+      <li class="nav-link"><a href="../index.html">Home</a></li>
+      <li class="nav-link"><a href="../model.html">Models</a></li>
+      <li class="nav-link"><a href="../technology.html">Technology</a></li>
+      <li class="nav-link"><a href="menezza.html" class="active-link">The Menezza</a></li>
+      <li class="nav-link"><a href="../services/servicos.html">Services</a></li>
+      <li class="nav-link"><a href="../Team/team.html">Team</a></li>
+      <li class="nav-link"><a href="../contact/contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="../Signup/cadastro.html" class="nav-button">Create account</a>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
-  <!-- ========================= HERO HEADER ========================= -->
-  <header id="page-header">
-    <div class="overlay">
-      <div class="hero-text-content">
-        <h1 class="hero-title">The Menezza Legacy</h1>
-        <p class="hero-subtitle">Where precision meets passion, and innovation drives excellence</p>
-        <a href="#about-story" class="hero-cta">Discover Our Story</a>
+  <!-- ===== HERO ===== -->
+  <header id="hero">
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Our Identity</span>
+      <h1>THE <span class="highlight">MENEZZA</span><br>LEGACY</h1>
+      <p>Where precision meets passion, and innovation drives excellence. Born from bold ideas and dreamed paths — more
+        than vehicles, we create symbols in motion.</p>
+      <div class="hero-cta">
+        <a href="#story" class="btn-primary">Discover Our Story</a>
+        <a href="#mvv" class="btn-ghost">Our Mission <i class="fas fa-arrow-right"></i></a>
       </div>
-      <div class="breadcrumb">
-        <a href="../index.html">Home</a> <i class="fas fa-angle-right arrow"></i>
-        <span>Menezza</span> <i class="fas fa-angle-right arrow"></i>
-        <span class="current">The Menezza</span>
-      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
     </div>
   </header>
 
-  <!-- ========================= ABOUT STORY SECTION ========================= -->
-  <section id="about-story">
-    <div class="story-container">
-      <div class="story-image">
-        <img src="../images/engine (1).jpg" alt="Menezza Engine" />
-        <div class="image-overlay"></div>
-      </div>
-      <div class="story-content">
-        <h5 class="highlight-text">Welcome to Menezza</h5>
-        <h2>The future of engineering, sculpted in power.</h2>
-        <p>
-          Far from ordinary roads and busy city traffic, there is Menezza — a place where precision meets passion.
-          Between innovation and tradition, every detail matters. From the elegant lines of our cars to the roar of
-          every engine, Menezza is synonymous with authenticity. Like a river nurturing the land, our commitment flows
-          into every creation, transforming each experience into a journey made with heart and mastery.
-        </p>
-      </div>
-    </div>
-  </section>
+  <main>
 
-  <!-- ========================= MISSION VISION VALUES CARDS ========================= -->
-  <section id="mvv-section">
-    <div class="container">
-      <div class="section-header-center">
-        <h5 class="highlight-text">Our Foundation</h5>
-        <h2>What Drives Us Forward</h2>
-      </div>
-
-      <div class="mvv-grid">
-        <div class="mvv-card">
-          <div class="card-icon">
-            <i class="fas fa-bullseye"></i>
-          </div>
-          <h3>Our Mission</h3>
-          <p>
-            At Menezza, our mission is to redefine the pleasure of driving, uniting bold design, exceptional
-            performance,
-            and technological innovation. We create vehicles that do not just transport, but thrill, connecting driver
-            and
-            machine in perfect harmony.
-          </p>
-        </div>
-
-        <div class="mvv-card">
-          <div class="card-icon">
-            <i class="fas fa-eye"></i>
-          </div>
-          <h3>Our Vision</h3>
-          <p>
-            To be a global reference in automotive excellence, developing cars that anticipate the future of mobility,
-            with
-            elegance, sustainability, and performance. We seek to inspire a new generation passionate about speed,
-            precision,
-            and style.
-          </p>
-        </div>
-
-        <div class="mvv-card">
-          <div class="card-icon">
-            <i class="fas fa-gem"></i>
-          </div>
-          <h3>Our Values</h3>
-          <p>
-            Passion for engineering. Respect for authenticity. Commitment to innovation. Excellence in every detail.
-            At Menezza, every choice reflects our purpose: to transform every journey into a unique experience.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================= COUNTER SECTION ========================= -->
-  <section id="counter-section">
-    <div class="container counter-grid">
-      <div class="counter-item">
-        <div class="counter-icon">
-          <i class="fas fa-award"></i>
-        </div>
-        <h3 class="animate-text">45</h3>
-        <p class="animate-text">Years of Experience</p>
-      </div>
-      <div class="counter-item">
-        <div class="counter-icon">
-          <i class="fas fa-project-diagram"></i>
-        </div>
-        <h3 class="animate-text">8,500</h3>
-        <p class="animate-text">Completed Projects</p>
-      </div>
-      <div class="counter-item">
-        <div class="counter-icon">
-          <i class="fas fa-users"></i>
-        </div>
-        <h3 class="animate-text">2,342</h3>
-        <p class="animate-text">Satisfied Clients</p>
-      </div>
-      <div class="counter-item">
-        <div class="counter-icon">
-          <i class="fas fa-trophy"></i>
-        </div>
-        <h3 class="animate-text">30</h3>
-        <p class="animate-text">Awards Won</p>
-      </div>
-    </div>
-  </section>
-
-  <script>
-    function animateCounters(duration = 5000) {
-      const counters = document.querySelectorAll(".counter-item h3");
-
-      counters.forEach(counter => {
-        const targetStr = counter.textContent.replace(/,/g, '');
-        const target = parseInt(targetStr, 10);
-        const startTime = performance.now();
-
-        function update(currentTime) {
-          const elapsed = currentTime - startTime;
-          if (elapsed < duration) {
-            const progress = elapsed / duration;
-            const currentNumber = Math.floor(progress * target);
-            counter.textContent = currentNumber.toLocaleString();
-            requestAnimationFrame(update);
-          } else {
-            counter.textContent = target.toLocaleString();
-          }
-        }
-        requestAnimationFrame(update);
-      });
-    }
-
-    const counterSection = document.getElementById('counter-section');
-    let animated = false;
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting && !animated) {
-          animated = true;
-          animateCounters(3000);
-        }
-      });
-    }, { threshold: 0.5 });
-
-    observer.observe(counterSection);
-  </script>
-
-  <!-- ========================= FORM SECTION ========================= -->
-  <section id="form-section">
-    <div class="form-container">
-      <div class="form-image">
-        <img src="../images/aboutUs (4).jpg" alt="Mechanic" loading="lazy" />
-      </div>
-
-      <div class="form-content">
-        <h5 class="highlight-text">Schedule a Service</h5>
-        <h2>Free Consultation</h2>
-        <p class="form-description">Book your appointment and experience premium automotive care</p>
-
-        <form class="consultation-form">
-          <select id="service" name="service" required>
-            <option value="">Select a Service</option>
-            <option value="tire-change">Tire Change</option>
-            <option value="change-oil">Oil Change</option>
-            <option value="engine-repair">Engine Repair</option>
-            <option value="battery-replace">Battery Replacement</option>
-            <option value="tow-truck">Towing</option>
-          </select>
-
-          <div class="form-row">
-            <input type="text" placeholder="Your name" required>
-            <input type="text" placeholder="Vehicle number" required>
-          </div>
-
-          <div class="form-row">
-            <input type="date" placeholder="Date" required>
-            <input type="time" placeholder="Time" required>
-          </div>
-
-          <textarea placeholder="Message" rows="5"></textarea>
-
-          <button type="submit" class="btn-submit">
-            <span>SEND REQUEST</span>
-            <i class="fas fa-arrow-right"></i>
-          </button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================= CAROUSEL SECTION ========================= -->
-  <section class="carousel-section">
-    <div class="carousel-header">
-      <h3 class="sub-title">On the Track with Menezza</h3>
-      <h2 class="main-title">Customer Feedback</h2>
-    </div>
-
-    <div class="carousel-container">
-      <div class="carousel-track">
-        <!-- Cards will be manipulated by JS -->
-        <div class="card">
-          <div class="quote-icon">
-            <i class="fas fa-quote-left"></i>
-          </div>
-          <p>"Menezza impressed me with technical care and precision of details. The performance of the models is top
-            level."</p>
-          <div class="client">
-            <img src="https://i.pravatar.cc/100?img=12" alt="Lucas Andrade" />
-            <div>
-              <strong>Lucas Andrade</strong>
-              <p>Mechanical Engineer</p>
+    <!-- ===== STORY SECTION ===== -->
+    <section id="story" class="story-section">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-image reveal">
+            <img src="../images/engine (1).jpg" alt="Menezza Engine">
+            <div class="story-image-badge">
+              <span>Est. 1980</span>
             </div>
           </div>
-        </div>
-
-        <div class="card">
-          <div class="quote-icon">
-            <i class="fas fa-quote-left"></i>
-          </div>
-          <p>"Menezza cars have a bold and modern aesthetic. You can see there is a creative vision behind every line."
-          </p>
-          <div class="client">
-            <img src="https://i.pravatar.cc/100?img=32" alt="Isabela Martins" />
-            <div>
-              <strong>Isabela Martins</strong>
-              <p>Design Student</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="quote-icon">
-            <i class="fas fa-quote-left"></i>
-          </div>
-          <p>"I have worked for years with maintenance and rarely see such clean and reliable construction. Menezza
-            delivers real quality."</p>
-          <div class="client">
-            <img src="https://i.pravatar.cc/100?img=48" alt="Juliana Costa" />
-            <div>
-              <strong>Juliana Costa</strong>
-              <p>Automotive Mechanic</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="quote-icon">
-            <i class="fas fa-quote-left"></i>
-          </div>
-          <p>"Besides the incredible cars, the Menezza website is intuitive and fast. The digital experience convinced
-            me."</p>
-          <div class="client">
-            <img src="https://i.pravatar.cc/100?img=8" alt="Renato Silva" />
-            <div>
-              <strong>Renato Silva</strong>
-              <p>Developer</p>
+          <div class="story-text reveal">
+            <span class="section-tag">Welcome to Menezza</span>
+            <h2>The Future of Engineering,<br>Sculpted in Power</h2>
+            <p>Far from ordinary roads and busy city traffic, there is Menezza — a place where precision meets passion.
+              Between innovation and tradition, every detail matters.</p>
+            <p>From the elegant lines of our cars to the roar of every engine, Menezza is synonymous with authenticity.
+              Like a river nurturing the land, our commitment flows into every creation, transforming each experience
+              into a journey made with heart and mastery.</p>
+            <div class="story-pillars">
+              <div class="pillar">
+                <i class="fas fa-gem"></i>
+                <span>Craftsmanship</span>
+              </div>
+              <div class="pillar">
+                <i class="fas fa-bolt"></i>
+                <span>Performance</span>
+              </div>
+              <div class="pillar">
+                <i class="fas fa-infinity"></i>
+                <span>Legacy</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="carousel-dots"></div>
-    </div>
-  </section>
+    <!-- ===== MISSION VISION VALUES ===== -->
+    <section id="mvv" class="mvv-section">
+      <div class="section-bg-text">VISION</div>
+      <div class="container">
+        <div class="section-intro reveal">
+          <span class="section-tag">Our Foundation</span>
+          <h2>What Drives Us Forward</h2>
+          <p>Three pillars that define every decision, every vehicle, and every relationship at Menezza.</p>
+        </div>
 
-  <script>
-    // Improved Infinite Carousel Loop
-    const track = document.querySelector('.carousel-track');
-
-    window.addEventListener('load', () => {
-      const originalCards = Array.from(track.children);
-      if (originalCards.length === 0) return;
-
-      // Clone all cards and append them to create infinite loop effect
-      originalCards.forEach(card => {
-        const clone = card.cloneNode(true);
-        track.appendChild(clone);
-      });
-
-      // Get all cards including clones
-      const allCards = Array.from(track.children);
-      const cardStyle = window.getComputedStyle(allCards[0]);
-      const cardMargin = parseFloat(cardStyle.marginLeft) + parseFloat(cardStyle.marginRight);
-      const cardWidth = allCards[0].offsetWidth + cardMargin;
-
-      let currentIndex = 0;
-      const totalOriginalCards = originalCards.length;
-
-      // Auto-scroll function
-      function scrollCarousel() {
-        currentIndex++;
-        track.style.transition = 'transform 0.6s ease-in-out';
-        track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-
-        // When we reach the cloned cards, reset to the beginning seamlessly
-        if (currentIndex >= totalOriginalCards) {
-          setTimeout(() => {
-            track.style.transition = 'none';
-            currentIndex = 0;
-            track.style.transform = `translateX(0)`;
-          }, 600); // Wait for transition to complete
-        }
-      }
-
-      // Start auto-scrolling
-      setInterval(scrollCarousel, 3500);
-    });
-  </script>
-
-  <!-- ========================= FOOTER ========================= -->
-  <footer id="footer">
-    <div class="container footer-grid">
-      <div class="footer-col">
-        <h3>MENEZZA</h3>
-        <p>Menezza was born from bold ideas and dreamed paths. More than vehicles, we create symbols in motion, with
-          elegance and precision.</p>
-        <div class="footer-social-icons">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-instagram"></i>
+        <div class="mvv-grid">
+          <div class="mvv-card reveal">
+            <div class="mvv-num">01</div>
+            <div class="mvv-icon"><i class="fas fa-bullseye"></i></div>
+            <h3>Our Mission</h3>
+            <p>At Menezza, our mission is to redefine the pleasure of driving — uniting bold design, exceptional
+              performance, and technological innovation. We create vehicles that don't just transport, but thrill,
+              connecting driver and machine in perfect harmony.</p>
+            <div class="mvv-line"></div>
+          </div>
+          <div class="mvv-card reveal">
+            <div class="mvv-num">02</div>
+            <div class="mvv-icon"><i class="fas fa-eye"></i></div>
+            <h3>Our Vision</h3>
+            <p>To be a global reference in automotive excellence — developing cars that anticipate the future of
+              mobility with elegance, sustainability, and performance. We seek to inspire a new generation passionate
+              about speed, precision, and style.</p>
+            <div class="mvv-line"></div>
+          </div>
+          <div class="mvv-card reveal">
+            <div class="mvv-num">03</div>
+            <div class="mvv-icon"><i class="fas fa-gem"></i></div>
+            <h3>Our Values</h3>
+            <p>Passion for engineering. Respect for authenticity. Commitment to innovation. Excellence in every detail.
+              At Menezza, every choice reflects our purpose — to transform every journey into a unique and unforgettable
+              experience.</p>
+            <div class="mvv-line"></div>
+          </div>
         </div>
       </div>
+    </section>
 
+    <!-- ===== COUNTERS ===== -->
+    <section id="counters" class="counters-section">
+      <div class="container">
+        <div class="counters-grid">
+          <div class="counter-item reveal" data-target="45">
+            <div class="counter-icon"><i class="fas fa-award"></i></div>
+            <div class="counter-number"><span class="counter">0</span><span class="suf">+</span></div>
+            <p class="counter-label">Years of Experience</p>
+          </div>
+          <div class="counter-item reveal" data-target="8500">
+            <div class="counter-icon"><i class="fas fa-project-diagram"></i></div>
+            <div class="counter-number"><span class="counter">0</span><span class="suf">+</span></div>
+            <p class="counter-label">Completed Projects</p>
+          </div>
+          <div class="counter-item reveal" data-target="2342">
+            <div class="counter-icon"><i class="fas fa-users"></i></div>
+            <div class="counter-number"><span class="counter">0</span><span class="suf">+</span></div>
+            <p class="counter-label">Satisfied Clients</p>
+          </div>
+          <div class="counter-item reveal" data-target="30">
+            <div class="counter-icon"><i class="fas fa-trophy"></i></div>
+            <div class="counter-number"><span class="counter">0</span><span class="suf"></span></div>
+            <p class="counter-label">Awards Won</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONSULTATION FORM ===== -->
+    <section id="consultation" class="form-section">
+      <div class="container">
+        <div class="form-grid">
+          <div class="form-image reveal">
+            <img src="../images/aboutUs (4).jpg" alt="Menezza Service">
+            <div class="form-image-overlay"></div>
+          </div>
+
+          <div class="form-content reveal">
+            <span class="section-tag">Schedule a Service</span>
+            <h2>Free<br>Consultation</h2>
+            <p class="form-desc">Book your appointment and experience premium automotive care from certified
+              specialists.</p>
+
+            <form class="consultation-form" id="consultForm">
+              <div class="form-field">
+                <select id="service" name="service" required>
+                  <option value="">Select a Service</option>
+                  <option value="tire-change">Tire Change</option>
+                  <option value="oil-change">Oil Change</option>
+                  <option value="engine-repair">Engine Repair</option>
+                  <option value="battery">Battery Replacement</option>
+                  <option value="towing">Towing Service</option>
+                  <option value="test-drive">Test Drive</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <div class="form-field">
+                  <input type="text" placeholder="Your name" required>
+                </div>
+                <div class="form-field">
+                  <input type="text" placeholder="Vehicle number">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-field">
+                  <input type="date" required>
+                </div>
+                <div class="form-field">
+                  <input type="time" required>
+                </div>
+              </div>
+              <div class="form-field">
+                <textarea placeholder="Additional message (optional)" rows="4"></textarea>
+              </div>
+              <button type="submit" class="btn-submit">
+                <span>Send Request</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="section-bg-text">REVIEWS</div>
+      <div class="container">
+        <div class="section-intro reveal">
+          <span class="section-tag">Client Feedback</span>
+          <h2>On the Track<br>with Menezza</h2>
+          <p>Hear what our community of drivers and enthusiasts have to say about their Menezza experience.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p>"Menezza impressed me with technical care and precision of details. The performance of the models is top
+              level — nothing comes close."</p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/100?img=12" alt="Lucas Andrade">
+              <div>
+                <strong>Lucas Andrade</strong>
+                <span>Mechanical Engineer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p>"Menezza cars have a bold and modern aesthetic. You can see there is a clear creative vision behind every
+              line. Absolutely stunning design."</p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/100?img=32" alt="Isabela Martins">
+              <div>
+                <strong>Isabela Martins</strong>
+                <span>Industrial Designer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p>"I have worked for years with maintenance and rarely see such clean and reliable construction. Menezza
+              delivers real, lasting quality."</p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/100?img=48" alt="Juliana Costa">
+              <div>
+                <strong>Juliana Costa</strong>
+                <span>Automotive Mechanic</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p>"Besides the incredible cars, the Menezza digital experience convinced me. Intuitive, fast, and premium —
+              just like the brand itself."</p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/100?img=8" alt="Renato Silva">
+              <div>
+                <strong>Renato Silva</strong>
+                <span>Software Developer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section id="cta" class="cta-section">
+      <div class="cta-overlay">
+        <div class="cta-content reveal">
+          <span class="section-tag">Begin Your Journey</span>
+          <h2>FEEL THE<br><span>MENEZZA SPIRIT</span></h2>
+          <p>Experience what it means to drive a living piece of art. Schedule a test drive and let the GT-X speak for
+            itself.</p>
+          <div class="cta-buttons">
+            <a href="../contact/contact.html" class="btn-primary">Book Test Drive</a>
+            <a href="../model.html" class="btn-ghost">Explore Models <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col brand-col">
+        <h2 class="footer-logo">MENEZZA</h2>
+        <p class="footer-desc">Menezza was born from bold ideas and dreamed paths. More than vehicles, we create symbols
+          in motion, with elegance and precision.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
       <div class="footer-col">
         <h3>Services</h3>
         <ul class="footer-list">
-          <li><img src="../icons/check-svgrepo-com.svg" alt="check"> Oil Change</li>
-          <li><img src="../icons/check-svgrepo-com.svg" alt="check"> Battery</li>
-          <li><img src="../icons/check-svgrepo-com.svg" alt="check"> Towing</li>
-          <li><img src="../icons/check-svgrepo-com.svg" alt="check"> Tire Change</li>
-          <li><img src="../icons/check-svgrepo-com.svg" alt="check"> Engine Repair</li>
+          <li><a href="#">Oil Change</a></li>
+          <li><a href="#">Battery Replacement</a></li>
+          <li><a href="#">Towing Service</a></li>
+          <li><a href="#">Tire Change</a></li>
+          <li><a href="#">Engine Repair</a></li>
         </ul>
       </div>
-
       <div class="footer-col">
         <h3>Contact</h3>
-        <ul class="footer-list contact-list">
-          <li><i class="fas fa-home"></i> 35 Afonso Pena St, BH, MG</li>
+        <ul class="footer-list contact-details">
+          <li><i class="fas fa-map-marker-alt"></i> 35 Afonso Pena St, BH, MG</li>
           <li><i class="fas fa-phone-alt"></i> +55 (31) 99999-9999</li>
           <li><i class="fas fa-envelope"></i> MenezzaAutomobilli@gmail.com</li>
         </ul>
       </div>
-
       <div class="footer-col">
         <h3>Hours</h3>
-        <span>Opening Days:</span>
-        <p class="hours-text">
-          Monday to Friday: 9am to 8pm<br>
-          Saturday: 9am to 5pm
-        </p>
-        <span>Holidays:</span>
-        <p class="hours-text">
-          All Sundays<br>
-          All official holidays
-        </p>
+        <div class="hours-block">
+          <p><strong>Mon–Fri:</strong> 9am - 8pm</p>
+          <p><strong>Saturday:</strong> 9am - 5pm</p>
+          <p><strong>Sunday:</strong> Closed</p>
+        </div>
       </div>
     </div>
-
     <div class="footer-bottom">
-      Copyright ©2025 Menezza. All rights reserved.
+      <p>&copy; 2025 Menezza Automobili. All rights reserved.</p>
+      <p class="credits">Designed for Excellence.</p>
     </div>
   </footer>
 
+  <script src="menezza.js"></script>
 </body>
 
 </html>
